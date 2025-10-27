@@ -1,0 +1,12 @@
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Domain/bin/Debug/net9.0/UserManagement.Domain.deps.json
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Domain/bin/Debug/net9.0/UserManagement.Domain.dll
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Domain/bin/Debug/net9.0/UserManagement.Domain.pdb
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Domain/obj/Debug/net9.0/UserManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Domain/obj/Debug/net9.0/UserManagement.Domain.AssemblyInfoInputs.cache
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Domain/obj/Debug/net9.0/UserManagement.Domain.AssemblyInfo.cs
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Domain/obj/Debug/net9.0/UserManagement.Domain.csproj.CoreCompileInputs.cache
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Domain/obj/Debug/net9.0/UserManagement.Domain.sourcelink.json
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Domain/obj/Debug/net9.0/UserManagement.Domain.dll
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Domain/obj/Debug/net9.0/refint/UserManagement.Domain.dll
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Domain/obj/Debug/net9.0/UserManagement.Domain.pdb
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Domain/obj/Debug/net9.0/ref/UserManagement.Domain.dll

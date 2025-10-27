@@ -1,0 +1,341 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj",
+        "projectName": "BuildingBlocks.Messaging",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Messaging/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
+        "projectName": "BuildingBlocks.Persistence",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Persistence/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj",
+        "projectName": "Catalog.Application",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj",
+        "projectName": "Catalog.Domain",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj",
+        "projectName": "Catalog.Infrastructure",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj"
+              },
+              "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj"
+              },
+              "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj"
+              },
+              "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

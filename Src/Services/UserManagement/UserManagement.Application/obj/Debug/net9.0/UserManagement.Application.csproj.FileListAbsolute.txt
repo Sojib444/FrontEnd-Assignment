@@ -1,0 +1,16 @@
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/bin/Debug/net9.0/UserManagement.Application.deps.json
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/bin/Debug/net9.0/UserManagement.Application.dll
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/bin/Debug/net9.0/UserManagement.Application.pdb
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/bin/Debug/net9.0/UserManagement.Domain.dll
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/bin/Debug/net9.0/UserManagement.Domain.pdb
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/obj/Debug/net9.0/UserManagement.Application.csproj.AssemblyReference.cache
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/obj/Debug/net9.0/UserManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/obj/Debug/net9.0/UserManagement.Application.AssemblyInfoInputs.cache
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/obj/Debug/net9.0/UserManagement.Application.AssemblyInfo.cs
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/obj/Debug/net9.0/UserManagement.Application.csproj.CoreCompileInputs.cache
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/obj/Debug/net9.0/UserManagement.Application.sourcelink.json
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/obj/Debug/net9.0/UserMana.22515BBA.Up2Date
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/obj/Debug/net9.0/UserManagement.Application.dll
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/obj/Debug/net9.0/refint/UserManagement.Application.dll
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/obj/Debug/net9.0/UserManagement.Application.pdb
+/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/UserManagement/UserManagement.Application/obj/Debug/net9.0/ref/UserManagement.Application.dll

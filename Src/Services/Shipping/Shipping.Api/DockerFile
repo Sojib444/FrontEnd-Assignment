@@ -1,0 +1,23 @@
+# Shipping.Api Dockerfile
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+WORKDIR /app
+EXPOSE 8085
+
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+WORKDIR /src
+COPY ["Shipping.Api/Shipping.Api.csproj", "Shipping.Api/"]
+COPY ["Shipping.Application/Shipping.Application.csproj", "Shipping.Application/"]
+COPY ["Shipping.Domain/Shipping.Domain.csproj", "Shipping.Domain/"]
+COPY ["Shipping.Infrastructure/Shipping.Infrastructure.csproj", "Shipping.Infrastructure/"]
+COPY ["BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj", "BuildingBlocks.Messaging/"]
+COPY ["BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj", "BuildingBlocks.Persistence/"]
+COPY ["BuildingBlocks.Web/BuildingBlocks.Web.csproj", "BuildingBlocks.Web/"]
+RUN dotnet restore "Shipping.Api/Shipping.Api.csproj"
+COPY . .
+WORKDIR "/src/Shipping.Api"
+RUN dotnet publish "Shipping.Api.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=build /app/publish .
+ENTRYPOINT ["dotnet", "Shipping.Api.dll"]
