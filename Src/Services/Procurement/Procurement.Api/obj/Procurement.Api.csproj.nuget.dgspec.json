@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Api/Procurement.Api.csproj": {}
+    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Api\\Procurement.Api.csproj": {}
   },
   "projects": {
-    "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj": {
+    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj",
+        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj",
         "projectName": "BuildingBlocks.Messaging",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj",
-        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Messaging/obj/",
+        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj",
+        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
+        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -60,27 +59,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
+    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
+        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj",
         "projectName": "BuildingBlocks.Persistence",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
-        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Persistence/obj/",
+        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
+        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -99,7 +97,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -120,27 +118,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj": {
+    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj",
+        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj",
         "projectName": "BuildingBlocks.Web",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj",
-        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Web/obj/",
+        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj",
+        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
+        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -159,7 +156,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -201,50 +198,49 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Api/Procurement.Api.csproj": {
+    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Api\\Procurement.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Api/Procurement.Api.csproj",
+        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Api\\Procurement.Api.csproj",
         "projectName": "Procurement.Api",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Api/Procurement.Api.csproj",
-        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Api/obj/",
+        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Api\\Procurement.Api.csproj",
+        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
+        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj"
+              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj": {
+                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj"
               },
-              "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj"
+              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
+                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj"
               },
-              "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj"
+              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj": {
+                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj"
               },
-              "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj"
+              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Application\\Procurement.Application.csproj": {
+                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Application\\Procurement.Application.csproj"
               },
-              "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj"
+              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Domain\\Procurement.Domain.csproj": {
+                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Domain\\Procurement.Domain.csproj"
               },
-              "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Infrastructure/Procurement.Infrastructure.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Infrastructure/Procurement.Infrastructure.csproj"
+              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Infrastructure\\Procurement.Infrastructure.csproj": {
+                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Infrastructure\\Procurement.Infrastructure.csproj"
               }
             }
           }
@@ -259,7 +255,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -319,35 +315,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj": {
+    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Application\\Procurement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj",
+        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Application\\Procurement.Application.csproj",
         "projectName": "Procurement.Application",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj",
-        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Application/obj/",
+        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Application\\Procurement.Application.csproj",
+        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
+        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj"
+              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Domain\\Procurement.Domain.csproj": {
+                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Domain\\Procurement.Domain.csproj"
               }
             }
           }
@@ -362,7 +357,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -401,27 +396,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj": {
+    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Domain\\Procurement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj",
+        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Domain\\Procurement.Domain.csproj",
         "projectName": "Procurement.Domain",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj",
-        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Domain/obj/",
+        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Domain\\Procurement.Domain.csproj",
+        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
+        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -440,7 +434,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -461,41 +455,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Infrastructure/Procurement.Infrastructure.csproj": {
+    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Infrastructure\\Procurement.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Infrastructure/Procurement.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Infrastructure\\Procurement.Infrastructure.csproj",
         "projectName": "Procurement.Infrastructure",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Infrastructure/Procurement.Infrastructure.csproj",
-        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Infrastructure/obj/",
+        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Infrastructure\\Procurement.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
+        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj"
+              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
+                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj"
               },
-              "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj"
+              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Application\\Procurement.Application.csproj": {
+                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Application\\Procurement.Application.csproj"
               },
-              "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj"
+              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Domain\\Procurement.Domain.csproj": {
+                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Procurement\\Procurement.Domain\\Procurement.Domain.csproj"
               }
             }
           }
@@ -510,7 +503,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -551,7 +544,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

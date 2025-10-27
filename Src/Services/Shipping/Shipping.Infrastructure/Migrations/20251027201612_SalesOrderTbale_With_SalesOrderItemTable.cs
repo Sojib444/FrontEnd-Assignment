@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Shipping.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class Added_Saless_Order_and_SalesOrderItem_Table : Migration
+    public partial class SalesOrderTbale_With_SalesOrderItemTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "SalesOrder",
+                name: "SalesOrders",
                 schema: "shipping",
                 columns: table => new
                 {
@@ -24,9 +24,9 @@ namespace Shipping.Infrastructure.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_SalesOrder", x => x.Id);
+                    table.PrimaryKey("PK_SalesOrders", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_SalesOrder_customer_CustomerId",
+                        name: "FK_SalesOrders_customer_CustomerId",
                         column: x => x.CustomerId,
                         principalSchema: "shipping",
                         principalTable: "customer",
@@ -49,10 +49,10 @@ namespace Shipping.Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_SalesOrderItem", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_SalesOrderItem_SalesOrder_SalesOrderId",
+                        name: "FK_SalesOrderItem_SalesOrders_SalesOrderId",
                         column: x => x.SalesOrderId,
                         principalSchema: "shipping",
-                        principalTable: "SalesOrder",
+                        principalTable: "SalesOrders",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -65,12 +65,6 @@ namespace Shipping.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_SalesOrder_CustomerId",
-                schema: "shipping",
-                table: "SalesOrder",
-                column: "CustomerId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_SalesOrderItem_ProductId",
                 schema: "shipping",
                 table: "SalesOrderItem",
@@ -81,6 +75,12 @@ namespace Shipping.Infrastructure.Migrations
                 schema: "shipping",
                 table: "SalesOrderItem",
                 column: "SalesOrderId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SalesOrders_CustomerId",
+                schema: "shipping",
+                table: "SalesOrders",
+                column: "CustomerId");
         }
 
         /// <inheritdoc />
@@ -91,7 +91,7 @@ namespace Shipping.Infrastructure.Migrations
                 schema: "shipping");
 
             migrationBuilder.DropTable(
-                name: "SalesOrder",
+                name: "SalesOrders",
                 schema: "shipping");
         }
     }

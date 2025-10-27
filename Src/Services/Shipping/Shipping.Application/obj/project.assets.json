@@ -205,6 +205,16 @@
             "related": ".xml"
           }
         }
+      },
+      "Shipping.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Shipping.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shipping.Domain.dll": {}
+        }
       }
     }
   },
@@ -580,39 +590,48 @@
         "microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
       ]
+    },
+    "Shipping.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Shipping.Domain/Shipping.Domain.csproj",
+      "msbuildProject": "../Shipping.Domain/Shipping.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "MediatR >= 13.0.0"
+      "MediatR >= 13.0.0",
+      "Shipping.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "/home/md-sojib-hosen/.nuget/packages/": {}
+    "C:\\Users\\Sojib\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Shipping/Shipping.Application/Shipping.Application.csproj",
+      "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Shipping\\Shipping.Application\\Shipping.Application.csproj",
       "projectName": "Shipping.Application",
-      "projectPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Shipping/Shipping.Application/Shipping.Application.csproj",
-      "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-      "outputPath": "/home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Shipping/Shipping.Application/obj/",
+      "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Shipping\\Shipping.Application\\Shipping.Application.csproj",
+      "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
+      "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Shipping\\Shipping.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Shipping\\Shipping.Domain\\Shipping.Domain.csproj": {
+              "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Shipping\\Shipping.Domain\\Shipping.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -625,7 +644,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -652,7 +671,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

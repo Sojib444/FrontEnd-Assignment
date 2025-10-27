@@ -12,8 +12,8 @@ using Shipping.Infrastructure;
 namespace Shipping.Infrastructure.Migrations
 {
     [DbContext(typeof(ShippingDbContext))]
-    [Migration("20251027134453_Added_Saless_Order_and_SalesOrderItem_Table")]
-    partial class Added_Saless_Order_and_SalesOrderItem_Table
+    [Migration("20251027201612_SalesOrderTbale_With_SalesOrderItemTable")]
+    partial class SalesOrderTbale_With_SalesOrderItemTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -118,7 +118,7 @@ namespace Shipping.Infrastructure.Migrations
 
                     b.HasIndex("CustomerId");
 
-                    b.ToTable("SalesOrder", "shipping");
+                    b.ToTable("SalesOrders", "shipping");
                 });
 
             modelBuilder.Entity("Shipping.Domain.SalesOrders.SalesOrderItem", b =>

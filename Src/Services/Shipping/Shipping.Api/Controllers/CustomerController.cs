@@ -39,7 +39,7 @@ public class CustomerController : ControllerBase
         }
         catch (ArgumentException ex)
         {
-            return ValidationProblem(title: "Invalid product data", detail: ex.Message, statusCode: StatusCodes.Status400BadRequest);
+            return ValidationProblem(title: "Invalid data", detail: ex.Message, statusCode: StatusCodes.Status400BadRequest);
         }
     }
 

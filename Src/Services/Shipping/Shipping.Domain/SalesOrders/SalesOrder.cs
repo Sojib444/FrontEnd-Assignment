@@ -10,7 +10,7 @@ public class SalesOrder
     public DateTime OrderDate { get; private set; }
     public double TotalAmount { get; private set; } 
     public Guid CustomerId { get; private set; } = default!;
-    public Customer Customer { get; private set; } = new Customer();
+    public Customer Customer { get; private set; } = default!;
     public List<SalesOrderItem> Items { get; private set; } = new();
 
     public SalesOrder() { }

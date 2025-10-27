@@ -115,7 +115,7 @@ namespace Shipping.Infrastructure.Migrations
 
                     b.HasIndex("CustomerId");
 
-                    b.ToTable("SalesOrder", "shipping");
+                    b.ToTable("SalesOrders", "shipping");
                 });
 
             modelBuilder.Entity("Shipping.Domain.SalesOrders.SalesOrderItem", b =>

@@ -17,6 +17,7 @@ public sealed class ShippingDbContext : DbContext
 
     public DbSet<Customer> Customers => Set<Customer>();
     public DbSet<Product> Products => Set<Product>();
+    public DbSet<SalesOrder> SalesOrders => Set<SalesOrder>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

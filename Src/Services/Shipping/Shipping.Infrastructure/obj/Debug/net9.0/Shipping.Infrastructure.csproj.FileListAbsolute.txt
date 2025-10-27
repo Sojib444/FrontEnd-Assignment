@@ -18,3 +18,23 @@
 /home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Shipping/Shipping.Infrastructure/obj/Debug/net9.0/refint/Shipping.Infrastructure.dll
 /home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Shipping/Shipping.Infrastructure/obj/Debug/net9.0/Shipping.Infrastructure.pdb
 /home/md-sojib-hosen/Sojib/Ess/Ess-Training/ESS-Training/Micro-Service/Src/Services/Shipping/Shipping.Infrastructure/obj/Debug/net9.0/ref/Shipping.Infrastructure.dll
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\bin\Debug\net9.0\Shipping.Infrastructure.deps.json
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\bin\Debug\net9.0\Shipping.Infrastructure.dll
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\bin\Debug\net9.0\Shipping.Infrastructure.pdb
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\bin\Debug\net9.0\BuildingBlocks.Persistence.dll
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\bin\Debug\net9.0\Shipping.Application.dll
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\bin\Debug\net9.0\Shipping.Domain.dll
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\bin\Debug\net9.0\Shipping.Application.pdb
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\bin\Debug\net9.0\Shipping.Domain.pdb
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\bin\Debug\net9.0\BuildingBlocks.Persistence.pdb
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\obj\Debug\net9.0\Shipping.Infrastructure.csproj.AssemblyReference.cache
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\obj\Debug\net9.0\Shipping.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\obj\Debug\net9.0\Shipping.Infrastructure.AssemblyInfoInputs.cache
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\obj\Debug\net9.0\Shipping.Infrastructure.AssemblyInfo.cs
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\obj\Debug\net9.0\Shipping.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\obj\Debug\net9.0\Shipping.Infrastructure.sourcelink.json
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\obj\Debug\net9.0\Shipping.1C68ED40.Up2Date
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\obj\Debug\net9.0\Shipping.Infrastructure.dll
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\obj\Debug\net9.0\refint\Shipping.Infrastructure.dll
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\obj\Debug\net9.0\Shipping.Infrastructure.pdb
+D:\Software Enginering\ESS\FrontEnd-Assignment\Src\Services\Shipping\Shipping.Infrastructure\obj\Debug\net9.0\ref\Shipping.Infrastructure.dll
