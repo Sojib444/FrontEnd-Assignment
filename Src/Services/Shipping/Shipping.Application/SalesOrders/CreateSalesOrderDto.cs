@@ -14,3 +14,12 @@ public sealed record SalesOrderItemDto(
     double Subtotal
 );
 
+public sealed record PaginatedSalesOrderRequestDto
+(
+    int Page = 1,
+    int PageSize = 10,
+    string SortBy = "orderDate",
+    string SortDir = "desc",
+    string? Search = null,
+    Dictionary<string, string>? Filters = null
+);
