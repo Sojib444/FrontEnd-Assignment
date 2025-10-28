@@ -11,16 +11,18 @@ public class SalesOrder
     public double TotalAmount { get; private set; } 
     public Guid CustomerId { get; private set; } = default!;
     public Customer Customer { get; private set; } = default!;
+    public OrderStatus OrderStatus { get; private set; }
     public List<SalesOrderItem> Items { get; private set; } = new();
 
     public SalesOrder() { }
 
-    public SalesOrder(string orderNo, Guid customerId, List<SalesOrderItem> items)
+    public SalesOrder(string orderNo,OrderStatus orderStatus, Guid customerId, List<SalesOrderItem> items)
     {
         OrderNo = orderNo;
         CustomerId = customerId;
         Items = items;
         TotalAmount = items.Sum(i => i.Subtotal);
         OrderDate = DateTime.UtcNow;
+        OrderStatus = orderStatus;
     }
 }

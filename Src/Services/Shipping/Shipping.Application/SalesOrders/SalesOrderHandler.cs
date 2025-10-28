@@ -12,6 +12,6 @@ public class CreateSalesOrderHandler : IRequestHandler<CreateSlesOrder, SalesOrd
     }
     public async Task<SalesOrderDto> Handle(CreateSlesOrder request, CancellationToken ct)
     {
-        return await _writer.AddSalesOrderAsync(request.CustomerId, request.Items, ct);
+        return await _writer.AddSalesOrderAsync(request.CustomerId, request.OrderStatus, request.Items, ct);
     }
 }

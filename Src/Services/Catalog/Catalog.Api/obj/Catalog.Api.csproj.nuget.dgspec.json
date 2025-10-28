@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Api\\Catalog.Api.csproj": {}
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Api/Catalog.Api.csproj": {}
   },
   "projects": {
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj",
         "projectName": "BuildingBlocks.Messaging",
-        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj",
-        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
-        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\obj\\",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +39,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -59,26 +60,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
         "projectName": "BuildingBlocks.Persistence",
-        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj",
-        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
-        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\obj\\",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -97,7 +99,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -118,26 +120,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj",
         "projectName": "BuildingBlocks.Web",
-        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj",
-        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
-        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\obj\\",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -156,7 +159,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -198,46 +201,47 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Api\\Catalog.Api.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Api/Catalog.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Api\\Catalog.Api.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Api/Catalog.Api.csproj",
         "projectName": "Catalog.Api",
-        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Api\\Catalog.Api.csproj",
-        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
-        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Api\\obj\\",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Api/Catalog.Api.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj"
               },
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj"
               },
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj"
               },
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Application\\Catalog.Application.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Application\\Catalog.Application.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj"
               },
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Infrastructure\\Catalog.Infrastructure.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Infrastructure\\Catalog.Infrastructure.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj"
               }
             }
           }
@@ -252,7 +256,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -308,34 +312,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Application\\Catalog.Application.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Application\\Catalog.Application.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj",
         "projectName": "Catalog.Application",
-        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Application\\Catalog.Application.csproj",
-        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
-        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Application\\obj\\",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj"
               }
             }
           }
@@ -350,7 +355,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -377,26 +382,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj",
         "projectName": "Catalog.Domain",
-        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj",
-        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
-        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Domain\\obj\\",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -415,7 +421,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -436,43 +442,44 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Infrastructure\\Catalog.Infrastructure.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Infrastructure\\Catalog.Infrastructure.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj",
         "projectName": "Catalog.Infrastructure",
-        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Infrastructure\\Catalog.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
-        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Infrastructure\\obj\\",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj"
               },
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj"
               },
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Application\\Catalog.Application.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Application\\Catalog.Application.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj"
               },
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj"
               }
             }
           }
@@ -487,7 +494,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -518,7 +525,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

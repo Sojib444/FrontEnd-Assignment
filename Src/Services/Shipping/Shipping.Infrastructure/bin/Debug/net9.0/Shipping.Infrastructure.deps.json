@@ -256,7 +256,7 @@
       "BuildingBlocks.Persistence/1.0.0": {
         "runtime": {
           "BuildingBlocks.Persistence.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -268,7 +268,7 @@
         },
         "runtime": {
           "Shipping.Application.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -276,7 +276,7 @@
       "Shipping.Domain/1.0.0": {
         "runtime": {
           "Shipping.Domain.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

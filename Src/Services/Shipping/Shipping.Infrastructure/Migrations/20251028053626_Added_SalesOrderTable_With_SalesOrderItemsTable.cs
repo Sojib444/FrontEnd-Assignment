@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Shipping.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class SalesOrderTbale_With_SalesOrderItemTable : Migration
+    public partial class Added_SalesOrderTable_With_SalesOrderItemsTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -20,7 +20,8 @@ namespace Shipping.Infrastructure.Migrations
                     OrderNo = table.Column<string>(type: "text", nullable: false),
                     OrderDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     TotalAmount = table.Column<double>(type: "double precision", precision: 18, scale: 2, nullable: false),
-                    CustomerId = table.Column<Guid>(type: "uuid", nullable: false)
+                    CustomerId = table.Column<Guid>(type: "uuid", nullable: false),
+                    OrderStatus = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {

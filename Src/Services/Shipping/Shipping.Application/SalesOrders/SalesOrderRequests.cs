@@ -4,7 +4,7 @@ using Shipping.Domain.SalesOrders;
 
 namespace Shipping.Application.SalesOrders;
 
-public sealed record CreateSlesOrder(Guid CustomerId, List<CreateSalesOrderItemDto> Items) 
+public sealed record CreateSlesOrder(Guid CustomerId,OrderStatus OrderStatus, List<CreateSalesOrderItemDto> Items) 
     : IRequest<SalesOrderDto>;
 public sealed record GetSalesOrders(PaginatedSalesOrderRequestDto request) 
     : IRequest<IReadOnlyList<PaginatedResult<SalesOrderDto>>>;

@@ -1584,24 +1584,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sojib\\.nuget\\packages\\": {}
+    "/home/md-sojib-hosen/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj",
+      "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj",
       "projectName": "BuildingBlocks.Web",
-      "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj",
-      "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
-      "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\obj\\",
+      "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj",
+      "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+      "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1620,7 +1621,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -1662,7 +1663,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

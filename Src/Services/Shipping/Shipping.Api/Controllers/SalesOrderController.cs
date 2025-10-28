@@ -23,7 +23,7 @@ public class SalesOrderController : ControllerBase
     {
         try
         {
-            var salesOrderDto = await _mediator.Send(new CreateSlesOrder(cmd.CustomerId, cmd.items), ct);
+            var salesOrderDto = await _mediator.Send(new CreateSlesOrder(cmd.CustomerId, cmd.OrderStatus, cmd.items), ct);
             return Ok(salesOrderDto);
         }
         catch (ArgumentException ex)

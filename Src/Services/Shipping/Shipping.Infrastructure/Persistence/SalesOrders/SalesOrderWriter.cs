@@ -15,7 +15,7 @@ public class SalesOrderWriter : ISalesOrderWriter
         _db = db;
         _unitOfWork = unitOfWork;
     }
-    public async Task<SalesOrderDto> AddSalesOrderAsync(Guid customerId, List<CreateSalesOrderItemDto> items, CancellationToken ct)
+    public async Task<SalesOrderDto> AddSalesOrderAsync(Guid customerId, OrderStatus orderStatus, List<CreateSalesOrderItemDto> items, CancellationToken ct)
     {
         var readyItems = new List<SalesOrderItem>();
 
@@ -26,11 +26,11 @@ public class SalesOrderWriter : ISalesOrderWriter
         }
 
         var total = await _db.SalesOrders.CountAsync();
-        var salesOrder = new SalesOrder("SalesOrder" + total, customerId, readyItems);
+        var salesOrder = new SalesOrder("SalesOrder" + total, orderStatus,customerId, readyItems);
         await _db.SalesOrders.AddAsync(salesOrder);
         await _unitOfWork.SaveChangesAsync(ct);
 
-        return new SalesOrderDto(salesOrder.Id, salesOrder.OrderNo, salesOrder.OrderDate,
+        return new SalesOrderDto(salesOrder.Id, salesOrder.OrderNo, salesOrder.OrderStatus, salesOrder.OrderDate,
             salesOrder.TotalAmount,
             salesOrder.CustomerId,
             salesOrder.Items.Select(x => new SalesOrderItemDto(x.ProductId, x.Quantity, x.UnitPrice, x.Subtotal)).ToList());

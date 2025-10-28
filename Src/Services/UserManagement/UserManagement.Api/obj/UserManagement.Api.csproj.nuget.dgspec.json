@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Api\\UserManagement.Api.csproj": {}
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Api/UserManagement.Api.csproj": {}
   },
   "projects": {
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj",
         "projectName": "BuildingBlocks.Messaging",
-        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj",
-        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
-        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\obj\\",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +39,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -59,26 +60,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
         "projectName": "BuildingBlocks.Persistence",
-        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj",
-        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
-        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\obj\\",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -97,7 +99,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -118,26 +120,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj",
         "projectName": "BuildingBlocks.Web",
-        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj",
-        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
-        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\obj\\",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -156,7 +159,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -198,49 +201,50 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Api\\UserManagement.Api.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Api/UserManagement.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Api\\UserManagement.Api.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Api/UserManagement.Api.csproj",
         "projectName": "UserManagement.Api",
-        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Api\\UserManagement.Api.csproj",
-        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
-        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Api\\obj\\",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Api/UserManagement.Api.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj"
               },
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj"
               },
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Web\\BuildingBlocks.Web.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Web/BuildingBlocks.Web.csproj"
               },
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Application\\UserManagement.Application.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Application\\UserManagement.Application.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Application/UserManagement.Application.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Application/UserManagement.Application.csproj"
               },
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Domain\\UserManagement.Domain.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Domain\\UserManagement.Domain.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Domain/UserManagement.Domain.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Domain/UserManagement.Domain.csproj"
               },
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Infrastructure/UserManagement.Infrastructure.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Infrastructure/UserManagement.Infrastructure.csproj"
               }
             }
           }
@@ -255,7 +259,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -319,34 +323,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Application\\UserManagement.Application.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Application/UserManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Application\\UserManagement.Application.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Application/UserManagement.Application.csproj",
         "projectName": "UserManagement.Application",
-        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Application\\UserManagement.Application.csproj",
-        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
-        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Application\\obj\\",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Application/UserManagement.Application.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Domain\\UserManagement.Domain.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Domain\\UserManagement.Domain.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Domain/UserManagement.Domain.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Domain/UserManagement.Domain.csproj"
               }
             }
           }
@@ -361,7 +366,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -404,26 +409,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Domain\\UserManagement.Domain.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Domain/UserManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Domain\\UserManagement.Domain.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Domain/UserManagement.Domain.csproj",
         "projectName": "UserManagement.Domain",
-        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Domain\\UserManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
-        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Domain\\obj\\",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Domain/UserManagement.Domain.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -442,7 +448,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -463,40 +469,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Infrastructure/UserManagement.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Infrastructure/UserManagement.Infrastructure.csproj",
         "projectName": "UserManagement.Infrastructure",
-        "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Sojib\\.nuget\\packages\\",
-        "outputPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Infrastructure\\obj\\",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Infrastructure/UserManagement.Infrastructure.csproj",
+        "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sojib\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\BuildingBlocks\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj"
               },
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Application\\UserManagement.Application.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Application\\UserManagement.Application.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Application/UserManagement.Application.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Application/UserManagement.Application.csproj"
               },
-              "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Domain\\UserManagement.Domain.csproj": {
-                "projectPath": "D:\\Software Enginering\\ESS\\FrontEnd-Assignment\\Src\\Services\\UserManagement\\UserManagement.Domain\\UserManagement.Domain.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Domain/UserManagement.Domain.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Domain/UserManagement.Domain.csproj"
               }
             }
           }
@@ -511,7 +518,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -552,7 +559,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

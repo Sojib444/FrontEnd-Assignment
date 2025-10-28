@@ -12,8 +12,8 @@ using Shipping.Infrastructure;
 namespace Shipping.Infrastructure.Migrations
 {
     [DbContext(typeof(ShippingDbContext))]
-    [Migration("20251027201612_SalesOrderTbale_With_SalesOrderItemTable")]
-    partial class SalesOrderTbale_With_SalesOrderItemTable
+    [Migration("20251028053626_Added_SalesOrderTable_With_SalesOrderItemsTable")]
+    partial class Added_SalesOrderTable_With_SalesOrderItemsTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -109,6 +109,9 @@ namespace Shipping.Infrastructure.Migrations
                     b.Property<string>("OrderNo")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<int>("OrderStatus")
+                        .HasColumnType("integer");
 
                     b.Property<double>("TotalAmount")
                         .HasPrecision(18, 2)

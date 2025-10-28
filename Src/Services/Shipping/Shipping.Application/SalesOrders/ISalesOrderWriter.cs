@@ -4,5 +4,5 @@ namespace Shipping.Application.SalesOrders;
 
 public interface ISalesOrderWriter
 {
-    Task<SalesOrderDto> AddSalesOrderAsync(Guid customerId, List<CreateSalesOrderItemDto> items, CancellationToken ct);
+    Task<SalesOrderDto> AddSalesOrderAsync(Guid customerId, OrderStatus orderStatus, List<CreateSalesOrderItemDto> items, CancellationToken ct);
 } 

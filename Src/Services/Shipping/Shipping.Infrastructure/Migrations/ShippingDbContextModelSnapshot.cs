@@ -107,6 +107,9 @@ namespace Shipping.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("OrderStatus")
+                        .HasColumnType("integer");
+
                     b.Property<double>("TotalAmount")
                         .HasPrecision(18, 2)
                         .HasColumnType("double precision");

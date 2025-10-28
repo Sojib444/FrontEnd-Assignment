@@ -5,16 +5,16 @@ using Shipping.Domain.SalesOrders;
 
 namespace Shipping.Infrastructure.Persistence.SalesOrders;
 
-public class SalesOrderReader : ISalesOrderReader
+public class SalesOrderReader
 {
     private ShippingDbContext _db;
     public SalesOrderReader(ShippingDbContext db)
     {
         _db = db;
     }
-    public Task<PaginatedResult<SalesOrderDto>> GetSalesOrdersAsync(PaginatedSalesOrderRequestDto request,
-        CancellationToken ct)
-    {
+    // public Task<PaginatedResult<SalesOrderDto>> GetSalesOrdersAsync(PaginatedSalesOrderRequestDto request,
+    //     CancellationToken ct)
+    //{
         //     IQueryable<SalesOrder> query = _db.SalesOrders
         //     .Include(o => o.Items)
         //     .AsNoTracking();
@@ -75,5 +75,5 @@ public class SalesOrderReader : ISalesOrderReader
         //     totalItems
         // );
         // }
-    }
+    //}
 }
