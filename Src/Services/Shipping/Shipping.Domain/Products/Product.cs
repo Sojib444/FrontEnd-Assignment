@@ -8,7 +8,6 @@ public class Product
     public double UniPrice { get; private set; }
     public List<SalesOrderItem> OrderItems { get; private set; } = new();
 
-
     public Product() {}
 
     public Product(string name, double unitPrice)

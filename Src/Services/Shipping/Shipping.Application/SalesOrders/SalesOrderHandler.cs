@@ -39,7 +39,20 @@ public class GetSalesOrderHandler : IRequestHandler<GetSalesOrder, SalesOrderDto
         _reader = reader;
     }
     public async Task<SalesOrderDto> Handle(GetSalesOrder request, CancellationToken cancellationToken)
-    { 
+    {
         return await _reader.GetSalesOrderAsync(request.id, cancellationToken);
+    }
+}
+
+public class UpdateSalesOrderHandler : IRequestHandler<UpdateSalesOrder, SalesOrderDto>
+{
+    private ISalesOrderWriter _writer;
+    public UpdateSalesOrderHandler(ISalesOrderWriter writer)
+    {
+        _writer = writer;
+    }
+    public async Task<SalesOrderDto> Handle(UpdateSalesOrder request, CancellationToken ct)
+    {
+        return await _writer.UpdateSalesOrderAsync(request.SalesOrderId, request.CustomerId, request.OrderStatus, request.Items,ct);
     }
 }

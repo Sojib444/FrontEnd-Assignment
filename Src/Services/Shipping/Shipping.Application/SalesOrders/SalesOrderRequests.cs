@@ -11,5 +11,8 @@ public sealed record GetSalesOrders(PaginatedSalesOrderRequestDto SearchRequest)
 
 public sealed record GetSalesOrder(Guid id) : IRequest<SalesOrderDto>;
 
+public sealed record UpdateSalesOrder(Guid SalesOrderId, Guid CustomerId,OrderStatus OrderStatus, List<CreateSalesOrderItemDto> Items) 
+    : IRequest<SalesOrderDto>;
+
 
 

@@ -58,7 +58,4 @@ public class ProductController : ControllerBase
         var list = await _mediator.Send(new GetProductDropDownList(name), ct);
         return Ok(list);
     }
-
-
-
 }

@@ -15,7 +15,6 @@ public class SalesOrderController : ControllerBase
         _mediator = mediator;
     }
 
-
     [HttpPost]
     [ProducesResponseType(typeof(object), StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -49,6 +48,16 @@ public class SalesOrderController : ControllerBase
     public async Task<ActionResult<SalesOrderDto>> GetById(Guid id, CancellationToken ct)
     {
         var dto = await _mediator.Send(new GetSalesOrder(id), ct);
+        if (dto is null) return NotFound();
+        return Ok(dto);
+    }
+
+    [HttpPut("{salesOrderId:guid}")]
+    [ProducesResponseType(typeof(SalesOrderDto), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<SalesOrderDto>> Update(Guid salesOrderId, [FromBody] CreateUpUpdateSalesOrderDto cmd, CancellationToken ct)
+    {
+        var dto = await _mediator.Send(new UpdateSalesOrder(salesOrderId, cmd.CustomerId, cmd.OrderStatus,cmd.items),ct);
         if (dto is null) return NotFound();
         return Ok(dto);
     }

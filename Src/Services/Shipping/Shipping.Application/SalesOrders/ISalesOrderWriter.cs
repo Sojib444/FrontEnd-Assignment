@@ -6,4 +6,7 @@ public interface ISalesOrderWriter
 {
     Task<SalesOrderDto> AddSalesOrderAsync(Guid customerId, OrderStatus orderStatus,
         List<CreateSalesOrderItemDto> items, CancellationToken ct);
+
+    Task<SalesOrderDto> UpdateSalesOrderAsync(Guid salesOrderId, Guid customerId, OrderStatus orderStatus,
+        List<CreateSalesOrderItemDto> items, CancellationToken ct);
 } 
