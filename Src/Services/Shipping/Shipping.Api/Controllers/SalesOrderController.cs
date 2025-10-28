@@ -1,5 +1,6 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Shipping.Application.Paginations;
 using Shipping.Application.SalesOrders;
 
 namespace Shipping.Api.Controllers;
@@ -30,5 +31,15 @@ public class SalesOrderController : ControllerBase
         {
             return ValidationProblem(title: "Invalid  data", detail: ex.Message, statusCode: StatusCodes.Status400BadRequest);
         }
+    }
+
+    [HttpGet("list")]
+    [ProducesResponseType(typeof(PaginatedResult<SalesOrderDto>), StatusCodes.Status200OK)]
+    public async Task<ActionResult<PaginatedResult<SalesOrderDto>>> List(
+        [FromQuery] PaginatedSalesOrderRequestDto searchRequest,
+        CancellationToken ct = default)
+    {
+        var list = await _mediator.Send(new GetSalesOrders(searchRequest));
+        return Ok(list);
     }
 }

@@ -21,6 +21,7 @@ public static class DependencyInjection
         services.AddScoped<IProductReader, ProductReader>();
         services.AddScoped<IProductUniqueness, ProductUniqueness>();
         services.AddScoped<ISalesOrderWriter, SalesOrderWriter>();
+        services.AddScoped<ISalesOrderReader, SalesOrderReader>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<ShippingDbContext>();
         return services;

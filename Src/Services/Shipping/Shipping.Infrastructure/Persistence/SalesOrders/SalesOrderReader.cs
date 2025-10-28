@@ -5,75 +5,76 @@ using Shipping.Domain.SalesOrders;
 
 namespace Shipping.Infrastructure.Persistence.SalesOrders;
 
-public class SalesOrderReader
+public class SalesOrderReader : ISalesOrderReader
 {
     private ShippingDbContext _db;
     public SalesOrderReader(ShippingDbContext db)
     {
         _db = db;
     }
-    // public Task<PaginatedResult<SalesOrderDto>> GetSalesOrdersAsync(PaginatedSalesOrderRequestDto request,
-    //     CancellationToken ct)
-    //{
-        //     IQueryable<SalesOrder> query = _db.SalesOrders
-        //     .Include(o => o.Items)
-        //     .AsNoTracking();
+    public async Task<PaginatedResult<SalesOrderDto>> GetSalesOrdersAsync(PaginatedSalesOrderRequestDto request,
+        CancellationToken ct)
+    {
+        var query = _db.SalesOrders.Include(o => o.Items).AsNoTracking();
 
-        // // Search
-        // if (!string.IsNullOrWhiteSpace(request.Search))
-        // {
-        //     var searchLower = request.Search.ToLower();
-        //     query = query.Where(o => o.OrderNo.ToLower().Contains(searchLower));
-        // }
+        // Search
+        if (!string.IsNullOrWhiteSpace(request.Search))
+        {
+            var searchLower = request.Search.ToLower();
+            query = query.Where(o => o.OrderNo.ToLower().Contains(searchLower));
+        }
 
-        // // Filters
-        // if (request.Filters != null)
-        // {
-        //     foreach (var filter in request.Filters)
-        //     {
-        //         if (filter.Key.ToLower() == "status")
-        //             query = query.Where(o => o. == filter.Value);
-        //     }
-        // }
+        // Filters
+        if (request.Filters != null)
+        {
+            foreach (var filter in request.Filters)
+            {
+                if (filter.Key.ToLower() == "orderstatus")
+                    query = query.Where(o => o.OrderStatus.ToString() == filter.Value);
 
-        // // Sorting
-        // query = (request.SortBy?.ToLower(), request.SortDir?.ToLower()) switch
-        // {
-        //     ("orderdate", "asc") => query.OrderBy(o => o.OrderDate),
-        //     ("orderdate", "desc") => query.OrderByDescending(o => o.OrderDate),
-        //     ("totalamount", "asc") => query.OrderBy(o => o.TotalAmount),
-        //     ("totalamount", "desc") => query.OrderByDescending(o => o.TotalAmount),
-        //     _ => query.OrderByDescending(o => o.OrderDate)
-        // };
+                if (filter.Key.ToLower() == "customer")
+                    query = query.Where(o => o.Customer.Id.ToString() == filter.Value);
+            }
+        }
 
-        // // Pagination
-        // var totalItems = await query.CountAsync(ct);
+        // Sorting
+        query = (request.SortBy?.ToLower(), request.SortDir?.ToLower()) switch
+        {
+            ("orderdate", "asc") => query.OrderBy(o => o.OrderDate),
+            ("orderdate", "desc") => query.OrderByDescending(o => o.OrderDate),
+            ("totalamount", "asc") => query.OrderBy(o => o.TotalAmount),
+            ("totalamount", "desc") => query.OrderByDescending(o => o.TotalAmount),
+            _ => query.OrderByDescending(o => o.OrderDate)
+        };
 
-        // var salesOrders = await query
-        //     .Skip((request.Page - 1) * request.PageSize)
-        //     .Take(request.PageSize)
-        //     .ToListAsync(ct);
+        // Pagination
+        var totalItems = await query.CountAsync(ct);
 
-        // var resultItems = salesOrders.Select(o => new SalesOrderDto(
-        //     o.Id,
-        //     o.OrderNo,
-        //     o.OrderDate,
-        //     o.TotalAmount,
-        //     o.CustomerId,
-        //     o.Items.Select(i => new SalesOrderItemDto(
-        //         i.ProductId,
-        //         i.Quantity,
-        //         i.UnitPrice,
-        //         i.Subtotal
-        //     )).ToList()
-        // )).ToList();
+        var salesOrders = await query
+            .Skip((request.Page - 1) * request.PageSize)
+            .Take(request.PageSize)
+            .ToListAsync(ct);
 
-        // return new PaginatedResult<SalesOrderDto>(
-        //     resultItems,
-        //     request.Page,
-        //     request.PageSize,
-        //     totalItems
-        // );
-        // }
-    //}
+        var resultItems = salesOrders.Select(o => new SalesOrderDto(
+            o.Id,
+            o.OrderNo,
+            o.OrderStatus,
+            o.OrderDate,
+            o.TotalAmount,
+            o.CustomerId,
+            o.Items.Select(i => new SalesOrderItemDto(
+                i.ProductId,
+                i.Quantity,
+                i.UnitPrice,
+                i.Subtotal
+            )).ToList()
+        )).ToList();
+
+        return new PaginatedResult<SalesOrderDto>(
+            resultItems,
+            request.Page,
+            request.PageSize,
+            totalItems
+        );
+    }
 }
