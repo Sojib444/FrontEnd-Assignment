@@ -42,4 +42,14 @@ public class SalesOrderController : ControllerBase
         var list = await _mediator.Send(new GetSalesOrders(searchRequest));
         return Ok(list);
     }
+
+    [HttpGet("{id:guid}")]
+    [ProducesResponseType(typeof(SalesOrderDto), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<SalesOrderDto>> GetById(Guid id, CancellationToken ct)
+    {
+        var dto = await _mediator.Send(new GetSalesOrder(id), ct);
+        if (dto is null) return NotFound();
+        return Ok(dto);
+    }
 }

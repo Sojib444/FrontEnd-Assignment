@@ -9,5 +9,7 @@ public sealed record CreateSlesOrder(Guid CustomerId,OrderStatus OrderStatus, Li
 public sealed record GetSalesOrders(PaginatedSalesOrderRequestDto SearchRequest) 
     : IRequest<PaginatedResult<SalesOrderDto>>;
 
+public sealed record GetSalesOrder(Guid id) : IRequest<SalesOrderDto>;
+
 
 

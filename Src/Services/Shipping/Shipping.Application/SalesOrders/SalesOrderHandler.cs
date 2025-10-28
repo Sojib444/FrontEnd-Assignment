@@ -24,9 +24,22 @@ public class GetSalesOrdersHandler : IRequestHandler<GetSalesOrders, PaginatedRe
     {
         _reader = reader;
     }
-    
+
     public async Task<PaginatedResult<SalesOrderDto>> Handle(GetSalesOrders request, CancellationToken cancellationToken)
     {
         return await _reader.GetSalesOrdersAsync(request.SearchRequest, cancellationToken);
+    }
+}
+
+public class GetSalesOrderHandler : IRequestHandler<GetSalesOrder, SalesOrderDto>
+{
+    private ISalesOrderReader _reader;
+    public GetSalesOrderHandler(ISalesOrderReader reader)
+    {
+        _reader = reader;
+    }
+    public async Task<SalesOrderDto> Handle(GetSalesOrder request, CancellationToken cancellationToken)
+    { 
+        return await _reader.GetSalesOrderAsync(request.id, cancellationToken);
     }
 }

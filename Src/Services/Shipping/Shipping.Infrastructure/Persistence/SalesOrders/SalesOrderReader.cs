@@ -12,6 +12,31 @@ public class SalesOrderReader : ISalesOrderReader
     {
         _db = db;
     }
+
+    public async Task<SalesOrderDto> GetSalesOrderAsync(Guid id, CancellationToken ct)
+    {
+        var salesOrder =  await _db.SalesOrders.Where(x => x.Id == id).Include(o => o.Items).FirstOrDefaultAsync(ct);
+
+        if (salesOrder is null)
+        {
+            throw new Exception("Sales order not found");
+        }
+
+        return new SalesOrderDto(
+            salesOrder.Id,
+            salesOrder.OrderNo,
+            salesOrder.OrderStatus,
+            salesOrder.OrderDate,
+            salesOrder.TotalAmount,
+            salesOrder.CustomerId,
+            salesOrder.Items.Select(x => new SalesOrderItemDto(
+                        x.ProductId,
+                        x.Quantity,
+                        x.UnitPrice,
+                        x.Subtotal)).ToList()
+        );
+    }
+
     public async Task<PaginatedResult<SalesOrderDto>> GetSalesOrdersAsync(PaginatedSalesOrderRequestDto request,
         CancellationToken ct)
     {
