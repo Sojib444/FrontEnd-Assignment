@@ -1,0 +1,35 @@
+<div class="container">
+    <!-- Left: Customer Form -->
+    <div class="form-section">
+        <h2>Add Customer</h2>
+        <form [formGroup]="form" id="customerForm" (ngSubmit)="addcustomer()">
+            <label>
+                Name:
+                <input type="text" id="customerName" formControlName="name" />
+            </label>
+            <button type="submit">Add Customer</button>
+        </form>
+    </div>
+
+    <!-- Right: Customer List -->
+    <div class="list-section">
+        <h2>Customer List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody id="customerTableBody">
+                @for(item of customerService.customers(); track item.Id)
+                {
+                <tr>
+                    <td>{{item.Id}}</td>
+                    <td>{{item.Name}}</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
