@@ -1,4 +1,4 @@
-import { Product } from "../../model/product";
+import { Product } from "../../abstraction/model/product";
 
 export const product : Product[] = [
   { "Id": "a1b2c3d4-e5f6-47a8-9123-456789abcdef", "Name": "Wireless Mouse", "UnitPrice": 19.99 },

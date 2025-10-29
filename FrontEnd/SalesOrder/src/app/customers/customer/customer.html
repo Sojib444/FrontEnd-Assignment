@@ -17,19 +17,20 @@
         <table>
             <thead>
                 <tr>
-                    <th>Id</th>
+                    <th>Serial</th>
                     <th>Name</th>
                 </tr>
             </thead>
             <tbody id="customerTableBody">
-                @for(item of customerService.customers(); track item.Id)
+                @for(item of pagedCustomers(); track $index)
                 {
                 <tr>
-                    <td>{{item.Id}}</td>
+                    <td>{{(currentPage() -1) * 10 + $index + 1 }}</td>
                     <td>{{item.Name}}</td>
                 </tr>
                 }
             </tbody>
         </table>
+        <app-pagination [page]="currentPage()" [totalLength]="totalLength" (selectedPage)="onPageChange($event)"></app-pagination>
     </div>
 </div>

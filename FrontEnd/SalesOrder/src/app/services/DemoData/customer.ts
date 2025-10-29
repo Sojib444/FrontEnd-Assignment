@@ -1,4 +1,4 @@
-import { Customer } from "../../model/customer";
+import { Customer } from "../../abstraction/model/customer";
 
 export const customer: Customer[]= [
   { "Id": "5b3c4f74-2b6d-4cf3-a8f2-1b1b9c5b01a1", "Name": "Alice Johnson" },

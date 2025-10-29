@@ -1,6 +1,6 @@
 import { Injectable, signal } from '@angular/core';
 import { customer } from '../DemoData/customer';
-import { Customer as CustomerData } from '../../model/customer';
+import { Customer as CustomerData } from '../../abstraction/model/customer';
 
 @Injectable({
   providedIn: 'root'
