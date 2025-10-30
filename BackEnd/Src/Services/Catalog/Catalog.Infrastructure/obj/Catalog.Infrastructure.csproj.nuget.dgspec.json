@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj": {}
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj": {}
   },
   "projects": {
-    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj",
         "projectName": "BuildingBlocks.Messaging",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj",
         "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/obj/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Messaging/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
         "projectName": "BuildingBlocks.Persistence",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
         "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/obj/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
@@ -124,14 +124,14 @@
         }
       }
     },
-    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj",
         "projectName": "Catalog.Application",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj",
         "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Application/obj/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
@@ -147,8 +147,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj"
               }
             }
           }
@@ -194,14 +194,14 @@
         }
       }
     },
-    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj",
         "projectName": "Catalog.Domain",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj",
         "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/obj/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
@@ -254,14 +254,14 @@
         }
       }
     },
-    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj",
         "projectName": "Catalog.Infrastructure",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj",
         "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Infrastructure/obj/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
@@ -277,17 +277,17 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj"
               },
-              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj"
               },
-              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Application/Catalog.Application.csproj"
               },
-              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Catalog/Catalog.Domain/Catalog.Domain.csproj"
               }
             }
           }

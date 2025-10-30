@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Infrastructure/Procurement.Infrastructure.csproj": {}
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Infrastructure/Procurement.Infrastructure.csproj": {}
   },
   "projects": {
-    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
         "projectName": "BuildingBlocks.Persistence",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
         "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/obj/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj",
         "projectName": "Procurement.Application",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj",
         "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Application/obj/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
@@ -87,8 +87,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj"
               }
             }
           }
@@ -146,14 +146,14 @@
         }
       }
     },
-    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj",
         "projectName": "Procurement.Domain",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj",
         "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Domain/obj/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
@@ -206,14 +206,14 @@
         }
       }
     },
-    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Infrastructure/Procurement.Infrastructure.csproj": {
+    "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Infrastructure/Procurement.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Infrastructure/Procurement.Infrastructure.csproj",
+        "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Infrastructure/Procurement.Infrastructure.csproj",
         "projectName": "Procurement.Infrastructure",
-        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Infrastructure/Procurement.Infrastructure.csproj",
+        "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Infrastructure/Procurement.Infrastructure.csproj",
         "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Infrastructure/obj/",
+        "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
@@ -229,14 +229,14 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj"
               },
-              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Application/Procurement.Application.csproj"
               },
-              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj": {
-                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj"
+              "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj": {
+                "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Domain/Procurement.Domain.csproj"
               }
             }
           }

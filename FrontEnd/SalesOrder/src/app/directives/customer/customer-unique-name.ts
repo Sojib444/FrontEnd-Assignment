@@ -20,7 +20,8 @@ export class CustomerUniqueName {
         debounceTime(200),
         map((e: any) => e.target.value.trim()),
         map(value => {
-          if (!value) return false;
+          if (!value)
+            return false;
           let customer = this.customerService.customers().find(x => x.Name == value);
           if (customer)
             return true;

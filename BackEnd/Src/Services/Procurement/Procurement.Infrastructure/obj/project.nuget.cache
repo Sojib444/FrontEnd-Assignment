@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m5vOG3nSb+s=",
+  "dgSpecHash": "vOd7orOR+8s=",
   "success": true,
-  "projectFilePath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Procurement/Procurement.Infrastructure/Procurement.Infrastructure.csproj",
+  "projectFilePath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Procurement/Procurement.Infrastructure/Procurement.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/home/md-sojib-hosen/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/home/md-sojib-hosen/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",

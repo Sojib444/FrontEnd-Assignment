@@ -1,0 +1,42 @@
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.order-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    max-width: 1000px;
+    padding: 25px 30px;
+}
+
+.table thead {
+    background-color: #f1f3f5;
+}
+
+.btn-add {
+    background-color: #198754;
+    color: #fff;
+}
+
+.btn-add:hover {
+    background-color: #157347;
+}
+
+.customerType
+{
+    margin-left: 10px;
+    border: 1px solid;
+    padding: 0px 5px;
+}
+
+.customerType label
+{
+    margin-left: 5px;
+}

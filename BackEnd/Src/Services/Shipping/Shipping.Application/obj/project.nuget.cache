@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AtClR9/gb0M=",
+  "dgSpecHash": "v4FB7QLbjAI=",
   "success": true,
-  "projectFilePath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Shipping/Shipping.Application/Shipping.Application.csproj",
+  "projectFilePath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Shipping/Shipping.Application/Shipping.Application.csproj",
   "expectedPackageFiles": [
     "/home/md-sojib-hosen/.nuget/packages/mediatr/13.0.0/mediatr.13.0.0.nupkg.sha512",
     "/home/md-sojib-hosen/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",

@@ -1047,11 +1047,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Application/UserManagement.Application.csproj",
+      "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/UserManagement/UserManagement.Application/UserManagement.Application.csproj",
       "projectName": "UserManagement.Application",
-      "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Application/UserManagement.Application.csproj",
+      "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/UserManagement/UserManagement.Application/UserManagement.Application.csproj",
       "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-      "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Application/obj/",
+      "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/UserManagement/UserManagement.Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
@@ -1067,8 +1067,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Domain/UserManagement.Domain.csproj": {
-              "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/UserManagement/UserManagement.Domain/UserManagement.Domain.csproj"
+            "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/UserManagement/UserManagement.Domain/UserManagement.Domain.csproj": {
+              "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/UserManagement/UserManagement.Domain/UserManagement.Domain.csproj"
             }
           }
         }

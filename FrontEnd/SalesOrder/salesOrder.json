@@ -1,0 +1,482 @@
+{
+    "customers": [
+        {
+            "Id": "5b3c4f74-2b6d-4cf3-a8f2-1b1b9c5b01a1",
+            "Name": "Alice Johnson"
+        },
+        {
+            "Id": "7d5f1c42-45a8-43d3-b218-9c912bca2a12",
+            "Name": "Michael Smith"
+        },
+        {
+            "Id": "a32f6b1e-7a3b-4b66-b729-df31f8124b99",
+            "Name": "Sophia Lee"
+        },
+        {
+            "Id": "e71c5b39-6c2f-4db7-94f1-f812b7124cd1",
+            "Name": "Daniel Brown"
+        },
+        {
+            "Id": "cb8c31a0-b6cf-4de8-a31b-abc1e5f9d991",
+            "Name": "Emma Davis"
+        },
+        {
+            "Id": "d4a12cf2-bb45-4d12-9c8d-9df33b8a2142",
+            "Name": "Liam Wilson"
+        },
+        {
+            "Id": "6f97e9a1-c6b9-4c7d-91b3-9c9e8f4b1131",
+            "Name": "Olivia Martinez"
+        },
+        {
+            "Id": "b8a9c1d4-3b2c-42f1-a9c3-8f17b8e91212",
+            "Name": "Noah Anderson"
+        },
+        {
+            "Id": "a1f2b3c4-2d3e-4f56-9a7b-8c9d7e6f1a2b",
+            "Name": "Isabella Taylor"
+        },
+        {
+            "Id": "9e8f7d6c-5b4a-3c2d-1f0e-9a8b7c6d5e4f",
+            "Name": "Ethan Thomas"
+        },
+        {
+            "Id": "4c2b8d1a-3a9f-4b6d-b2f1-d8e4f9a7c5b2",
+            "Name": "Ava Moore"
+        },
+        {
+            "Id": "3d8f9a6e-7c2b-4f1d-9b5a-c2a7e1b4d6e7",
+            "Name": "James Harris"
+        },
+        {
+            "Id": "1b7c8a9d-3e4f-4a2b-9d8c-7f6e1d2b3c4a",
+            "Name": "Mia Clark"
+        },
+        {
+            "Id": "2f3a4b5c-6d7e-8f9a-b1c2-d3e4f5a6b7c8",
+            "Name": "Benjamin Lewis"
+        },
+        {
+            "Id": "8c7d6e5f-4a3b-2c1d-0e9f-8a7b6c5d4e3f",
+            "Name": "Charlotte Young"
+        },
+        {
+            "Id": "5e4d3c2b-1a0f-9e8d-7c6b-5a4d3e2f1b0a",
+            "Name": "Henry Hall"
+        },
+        {
+            "Id": "6a5b4c3d-2e1f-9d8c-7b6a-5f4e3d2c1b0a",
+            "Name": "Amelia King"
+        },
+        {
+            "Id": "1f2e3d4c-5b6a-7c8d-9e0f-1a2b3c4d5e6f",
+            "Name": "Lucas Wright"
+        },
+        {
+            "Id": "9a8b7c6d-5e4f-3d2c-1b0a-9f8e7d6c5b4a",
+            "Name": "Harper Scott"
+        },
+        {
+            "Id": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+            "Name": "Alexander Green"
+        },
+        {
+            "Id": "c4b3a2f1-e0d9-8c7b-6a5f-4e3d2c1b0a9f",
+            "Name": "Ella Adams"
+        },
+        {
+            "Id": "d5e6f7a8-b9c0-d1e2-f3a4-b5c6d7e8f9a0",
+            "Name": "Jack Baker"
+        },
+        {
+            "Id": "a7b8c9d0-e1f2-a3b4-c5d6-e7f8a9b0c1d2",
+            "Name": "Scarlett Nelson"
+        },
+        {
+            "Id": "f3e2d1c0-b9a8-7654-3210-fedcba987654",
+            "Name": "Logan Carter"
+        },
+        {
+            "Id": "0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
+            "Name": "Victoria Perez"
+        },
+        {
+            "Id": "7f6e5d4c-3b2a-1c0d-9e8f-7a6b5c4d3e2f",
+            "Name": "Elijah Rivera"
+        },
+        {
+            "Id": "5d6c7b8a-9f0e-1d2c-3b4a-5e6f7c8d9a0b",
+            "Name": "Grace Mitchell"
+        },
+        {
+            "Id": "3b2a1c0d-9e8f-7d6c-5b4a-3e2f1a0b9c8d",
+            "Name": "William Roberts"
+        },
+        {
+            "Id": "f9e8d7c6-b5a4-9382-7160-5f4e3d2c1b0a",
+            "Name": "Luna Turner"
+        },
+        {
+            "Id": "e1f2a3b4-c5d6-e7f8-a9b0-c1d2e3f4a5b6",
+            "Name": "Sebastian Campbell"
+        }
+    ],
+    "products": [
+        {
+            "Id": "a1b2c3d4-e5f6-47a8-9123-456789abcdef",
+            "Name": "Wireless Mouse",
+            "UnitPrice": 19.99
+        },
+        {
+            "Id": "b2c3d4e5-f6a7-48b9-8234-56789abcdef0",
+            "Name": "Mechanical Keyboard",
+            "UnitPrice": 59.99
+        },
+        {
+            "Id": "c3d4e5f6-a7b8-49ca-9345-6789abcdef01",
+            "Name": "USB-C Hub",
+            "UnitPrice": 29.99
+        },
+        {
+            "Id": "d4e5f6a7-b8c9-40db-a456-789abcdef012",
+            "Name": "27-inch Monitor",
+            "UnitPrice": 229.99
+        },
+        {
+            "Id": "e5f6a7b8-c9d0-41ec-b567-89abcdef0123",
+            "Name": "External SSD 1TB",
+            "UnitPrice": 139.99
+        },
+        {
+            "Id": "f6a7b8c9-d0e1-42fd-c678-9abcdef01234",
+            "Name": "Bluetooth Headphones",
+            "UnitPrice": 79.99
+        },
+        {
+            "Id": "a7b8c9d0-e1f2-430e-d789-abcdef012345",
+            "Name": "Smartphone Stand",
+            "UnitPrice": 12.49
+        },
+        {
+            "Id": "b8c9d0e1-f2a3-441f-e890-bcdef0123456",
+            "Name": "Webcam HD 1080p",
+            "UnitPrice": 49.99
+        },
+        {
+            "Id": "c9d0e1f2-a3b4-4520-f901-cdef01234567",
+            "Name": "Laptop Cooling Pad",
+            "UnitPrice": 24.99
+        },
+        {
+            "Id": "d0e1f2a3-b4c5-4631-0912-def012345678",
+            "Name": "Portable Power Bank",
+            "UnitPrice": 34.99
+        },
+        {
+            "Id": "e1f2a3b4-c5d6-4742-1a23-ef0123456789",
+            "Name": "Wireless Charger",
+            "UnitPrice": 27.99
+        },
+        {
+            "Id": "f2a3b4c5-d6e7-4853-2b34-f0123456789a",
+            "Name": "Smart LED Light Bulb",
+            "UnitPrice": 14.99
+        },
+        {
+            "Id": "a3b4c5d6-e7f8-4964-3c45-0123456789ab",
+            "Name": "HDMI Cable 2m",
+            "UnitPrice": 9.99
+        },
+        {
+            "Id": "b4c5d6e7-f8a9-4a75-4d56-123456789abc",
+            "Name": "Gaming Chair",
+            "UnitPrice": 189.99
+        },
+        {
+            "Id": "c5d6e7f8-a9b0-4b86-5e67-23456789abcd",
+            "Name": "Ergonomic Mouse Pad",
+            "UnitPrice": 7.49
+        },
+        {
+            "Id": "d6e7f8a9-b0c1-4c97-6f78-3456789abcde",
+            "Name": "USB Flash Drive 64GB",
+            "UnitPrice": 15.99
+        },
+        {
+            "Id": "e7f8a9b0-c1d2-4da8-7899-456789abcdef",
+            "Name": "Wireless Speaker",
+            "UnitPrice": 59.49
+        },
+        {
+            "Id": "f8a9b0c1-d2e3-4eb9-89aa-56789abcdef0",
+            "Name": "Noise Cancelling Earbuds",
+            "UnitPrice": 89.99
+        },
+        {
+            "Id": "a9b0c1d2-e3f4-4fca-9abb-6789abcdef01",
+            "Name": "Smartwatch",
+            "UnitPrice": 199.99
+        },
+        {
+            "Id": "b0c1d2e3-f4a5-40db-abcc-789abcdef012",
+            "Name": "Laptop Backpack",
+            "UnitPrice": 49.99
+        },
+        {
+            "Id": "c1d2e3f4-a5b6-41ec-bcdd-89abcdef0123",
+            "Name": "Wireless Keyboard",
+            "UnitPrice": 39.99
+        },
+        {
+            "Id": "d2e3f4a5-b6c7-42fd-cdee-9abcdef01234",
+            "Name": "Graphics Tablet",
+            "UnitPrice": 129.99
+        },
+        {
+            "Id": "e3f4a5b6-c7d8-430e-deff-abcdef012345",
+            "Name": "Webcam with Microphone",
+            "UnitPrice": 54.99
+        },
+        {
+            "Id": "f4a5b6c7-d8e9-441f-eff0-bcdef0123456",
+            "Name": "Mini Projector",
+            "UnitPrice": 249.99
+        },
+        {
+            "Id": "a5b6c7d8-e9f0-4520-f001-cdef01234567",
+            "Name": "Wireless Router",
+            "UnitPrice": 99.99
+        },
+        {
+            "Id": "b6c7d8e9-f0a1-4631-0112-def012345678",
+            "Name": "Smart Plug",
+            "UnitPrice": 18.99
+        },
+        {
+            "Id": "c7d8e9f0-a1b2-4742-1223-ef0123456789",
+            "Name": "Mechanical Pencil Set",
+            "UnitPrice": 5.49
+        },
+        {
+            "Id": "d8e9f0a1-b2c3-4853-2334-f0123456789a",
+            "Name": "Desk Lamp",
+            "UnitPrice": 22.99
+        },
+        {
+            "Id": "e9f0a1b2-c3d4-4964-3445-0123456789ab",
+            "Name": "Office Chair Cushion",
+            "UnitPrice": 27.49
+        },
+        {
+            "Id": "f0a1b2c3-d4e5-4a75-4556-123456789abc",
+            "Name": "Portable Bluetooth Speaker",
+            "UnitPrice": 64.99
+        }
+    ],
+    "salesorders": [
+        {
+            "Id": "f0a1b2c3-d4e5-4a75-4556-123456789abc",
+            "OrderNo": "SO-2001",
+            "OrderDate": "2025-10-01T10:15:00Z",
+            "TotalAmount": 249.95,
+            "CustomerId": "5b3c4f74-2b6d-4cf3-a8f2-1b1b9c5b01a1",
+            "OrderSatus": 1,
+            "SalesOderItems": [
+                {
+                    "Id": "a1b1c1d1-e1f1-4a1b-9c1d-1e1f1a1b1c1d",
+                    "SalesOrderId": "f0a1b2c3-d4e5-4a75-4556-123456789abc",
+                    "ProductId": "a1b2c3d4-e5f6-47a8-9123-456789abcdef",
+                    "Quantity": 2,
+                    "UnitPrice": 19.99,
+                    "SubTotal": 39.98
+                },
+                {
+                    "Id": "b2c2d2e2-f2a2-4b2c-9d2e-2f2a2b2c2d2e",
+                    "SalesOrderId": "f0a1b2c3-d4e5-4a75-4556-123456789abc",
+                    "ProductId": "b2c3d4e5-f6a7-48b9-8234-56789abcdef0",
+                    "Quantity": 1,
+                    "UnitPrice": 59.99,
+                    "SubTotal": 59.99
+                },
+                {
+                    "Id": "c3d3e3f3-a3b3-4c3d-9e3f-3a3b3c3d3e3f",
+                    "SalesOrderId": "f0a1b2c3-d4e5-4a75-4556-123456789abc",
+                    "ProductId": "d4e5f6a7-b8c9-40db-a456-789abcdef012",
+                    "Quantity": 1,
+                    "UnitPrice": 149.98,
+                    "SubTotal": 149.98
+                }
+            ]
+        },
+        {
+            "Id": "e1f2a3b4-c5d6-4742-1a23-ef0123456789",
+            "OrderNo": "SO-2002",
+            "OrderDate": "2025-10-02T13:40:00Z",
+            "TotalAmount": 119.49,
+            "CustomerId": "7d5f1c42-45a8-43d3-b218-9c912bca2a12",
+            "OrderSatus": 2,
+            "SalesOderItems": [
+                {
+                    "Id": "d4d4e4f4-b4c4-4d4e-9f4a-4b4c4d4e4f4a",
+                    "SalesOrderId": "e1f2a3b4-c5d6-4742-1a23-ef0123456789",
+                    "ProductId": "e5f6a7b8-c9d0-41ec-b567-89abcdef0123",
+                    "Quantity": 3,
+                    "UnitPrice": 39.83,
+                    "SubTotal": 119.49
+                }
+            ]
+        },
+        {
+            "Id": "f2a3b4c5-d6e7-4853-2b34-f0123456789a",
+            "OrderNo": "SO-2003",
+            "OrderDate": "2025-10-03T09:30:00Z",
+            "TotalAmount": 89.99,
+            "CustomerId": "a32f6b1e-7a3b-4b66-b729-df31f8124b99",
+            "OrderSatus": 3,
+            "SalesOderItems": [
+                {
+                    "Id": "e5e5f5a5-c5d5-4e5f-9a5b-5c5d5e5f5a5b",
+                    "SalesOrderId": "f2a3b4c5-d6e7-4853-2b34-f0123456789a",
+                    "ProductId": "f6a7b8c9-d0e1-42fd-c678-9abcdef01234",
+                    "Quantity": 1,
+                    "UnitPrice": 89.99,
+                    "SubTotal": 89.99
+                }
+            ]
+        },
+        {
+            "Id": "a3b4c5d6-e7f8-4964-3c45-0123456789ab",
+            "OrderNo": "SO-2004",
+            "OrderDate": "2025-10-05T11:15:00Z",
+            "TotalAmount": 379.45,
+            "CustomerId": "e71c5b39-6c2f-4db7-94f1-f812b7124cd1",
+            "OrderSatus": 4,
+            "SalesOderItems": [
+                {
+                    "Id": "f6f6a6b6-d6e6-4f6a-9b6c-6d6e6f6a6b6c",
+                    "SalesOrderId": "a3b4c5d6-e7f8-4964-3c45-0123456789ab",
+                    "ProductId": "d4e5f6a7-b8c9-40db-a456-789abcdef012",
+                    "Quantity": 2,
+                    "UnitPrice": 189.72,
+                    "SubTotal": 379.44
+                }
+            ]
+        },
+        {
+            "Id": "b4c5d6e7-f8a9-4a75-4d56-123456789abc",
+            "OrderNo": "SO-2005",
+            "OrderDate": "2025-10-06T16:40:00Z",
+            "TotalAmount": 59.99,
+            "CustomerId": "cb8c31a0-b6cf-4de8-a31b-abc1e5f9d991",
+            "OrderSatus": 1,
+            "SalesOderItems": [
+                {
+                    "Id": "a7a7b7c7-e7f7-4a7b-9c7d-7e7f7a7b7c7d",
+                    "SalesOrderId": "b4c5d6e7-f8a9-4a75-4d56-123456789abc",
+                    "ProductId": "b2c3d4e5-f6a7-48b9-8234-56789abcdef0",
+                    "Quantity": 1,
+                    "UnitPrice": 59.99,
+                    "SubTotal": 59.99
+                }
+            ]
+        },
+        {
+            "Id": "c5d6e7f8-a9b0-4b86-5e67-23456789abcd",
+            "OrderNo": "SO-2006",
+            "OrderDate": "2025-10-08T09:45:00Z",
+            "TotalAmount": 289.99,
+            "CustomerId": "d4a12cf2-bb45-4d12-9c8d-9df33b8a2142",
+            "OrderSatus": 2,
+            "SalesOderItems": [
+                {
+                    "Id": "b8b8c8d8-f8a8-4b8c-9d8e-8f8a8b8c8d8e",
+                    "SalesOrderId": "c5d6e7f8-a9b0-4b86-5e67-23456789abcd",
+                    "ProductId": "d0e1f2a3-b4c5-4631-0912-def012345678",
+                    "Quantity": 1,
+                    "UnitPrice": 289.99,
+                    "SubTotal": 289.99
+                }
+            ]
+        },
+        {
+            "Id": "d6e7f8a9-b0c1-4c97-6f78-3456789abcde",
+            "OrderNo": "SO-2007",
+            "OrderDate": "2025-10-09T14:10:00Z",
+            "TotalAmount": 159.89,
+            "CustomerId": "6f97e9a1-c6b9-4c7d-91b3-9c9e8f4b1131",
+            "OrderSatus": 3,
+            "SalesOderItems": [
+                {
+                    "Id": "c9c9d9e9-a9b9-4c9d-9e9f-9a9b9c9d9e9f",
+                    "SalesOrderId": "d6e7f8a9-b0c1-4c97-6f78-3456789abcde",
+                    "ProductId": "f6a7b8c9-d0e1-42fd-c678-9abcdef01234",
+                    "Quantity": 2,
+                    "UnitPrice": 79.95,
+                    "SubTotal": 159.90
+                }
+            ]
+        },
+        {
+            "Id": "e7f8a9b0-c1d2-4da8-7899-456789abcdef",
+            "OrderNo": "SO-2008",
+            "OrderDate": "2025-10-10T17:50:00Z",
+            "TotalAmount": 499.50,
+            "CustomerId": "b8a9c1d4-3b2c-42f1-a9c3-8f17b8e91212",
+            "OrderSatus": 4,
+            "SalesOderItems": [
+                {
+                    "Id": "d1d1e1f1-b1c1-4d1e-9f1a-1b1c1d1e1f1a",
+                    "SalesOrderId": "e7f8a9b0-c1d2-4da8-7899-456789abcdef",
+                    "ProductId": "b4c5d6e7-f8a9-4a75-4d56-123456789abc",
+                    "Quantity": 1,
+                    "UnitPrice": 189.99,
+                    "SubTotal": 189.99
+                },
+                {
+                    "Id": "e2e2f2a2-c2d2-4e2f-9a2b-2c2d2e2f2a2b",
+                    "SalesOrderId": "e7f8a9b0-c1d2-4da8-7899-456789abcdef",
+                    "ProductId": "e5f6a7b8-c9d0-41ec-b567-89abcdef0123",
+                    "Quantity": 2,
+                    "UnitPrice": 154.75,
+                    "SubTotal": 309.50
+                }
+            ]
+        },
+        {
+            "Id": "f8a9b0c1-d2e3-4eb9-89aa-56789abcdef0",
+            "OrderNo": "SO-2009",
+            "OrderDate": "2025-10-12T15:20:00Z",
+            "TotalAmount": 74.25,
+            "CustomerId": "a1f2b3c4-2d3e-4f56-9a7b-8c9d7e6f1a2b",
+            "OrderSatus": 1,
+            "SalesOderItems": [
+                {
+                    "Id": "f3f3a3b3-d3e3-4f3a-9b3c-3d3e3f3a3b3c",
+                    "SalesOrderId": "f8a9b0c1-d2e3-4eb9-89aa-56789abcdef0",
+                    "ProductId": "f0a1b2c3-d4e5-4a75-4556-123456789abc",
+                    "Quantity": 3,
+                    "UnitPrice": 24.75,
+                    "SubTotal": 74.25
+                }
+            ]
+        },
+        {
+            "Id": "a9b0c1d2-e3f4-4fca-9abb-6789abcdef01",
+            "OrderNo": "SO-2010",
+            "OrderDate": "2025-10-15T09:40:00Z",
+            "TotalAmount": 639.99,
+            "CustomerId": "9e8f7d6c-5b4a-3c2d-1f0e-9a8b7c6d5e4f",
+            "OrderSatus": 2,
+            "SalesOderItems": [
+                {
+                    "Id": "a4a4b4c4-e4f4-4a4b-9c4d-4e4f4a4b4c4d",
+                    "SalesOrderId": "a9b0c1d2-e3f4-4fca-9abb-6789abcdef01",
+                    "ProductId": "d4e5f6a7-b8c9-40db-a456-789abcdef012",
+                    "Quantity": 1,
+                    "UnitPrice": 639.99,
+                    "SubTotal": 639.99
+                }
+            ]
+        }
+    ]
+}

@@ -4,6 +4,7 @@ import { Customer as CustomerData } from '../../abstraction/model/customer';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Pagination } from "../../pagination/pagination";
 import { CustomerUniqueName } from '../../directives/customer/customer-unique-name';
+import { noOnlySpacesValidator } from '../../validators/noOnlySpacesValidator';
 
 @Component({
   selector: 'app-customer',
@@ -33,12 +34,13 @@ export class Customer implements OnInit {
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
-      name: ['', Validators.required]
+      name: ['', Validators.required, noOnlySpacesValidator]
     })
   }
 
   addcustomer()
   {
+    console.log(this.form);
     if(this.form.invalid || this.hasNameExists)
       return;
 

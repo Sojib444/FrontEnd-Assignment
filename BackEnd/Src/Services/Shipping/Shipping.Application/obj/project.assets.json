@@ -609,11 +609,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Shipping/Shipping.Application/Shipping.Application.csproj",
+      "projectUniqueName": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Shipping/Shipping.Application/Shipping.Application.csproj",
       "projectName": "Shipping.Application",
-      "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Shipping/Shipping.Application/Shipping.Application.csproj",
+      "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Shipping/Shipping.Application/Shipping.Application.csproj",
       "packagesPath": "/home/md-sojib-hosen/.nuget/packages/",
-      "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Shipping/Shipping.Application/obj/",
+      "outputPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Shipping/Shipping.Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/md-sojib-hosen/.nuget/NuGet/NuGet.Config"
@@ -629,8 +629,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Shipping/Shipping.Domain/Shipping.Domain.csproj": {
-              "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/Services/Shipping/Shipping.Domain/Shipping.Domain.csproj"
+            "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Shipping/Shipping.Domain/Shipping.Domain.csproj": {
+              "projectPath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/Services/Shipping/Shipping.Domain/Shipping.Domain.csproj"
             }
           }
         }

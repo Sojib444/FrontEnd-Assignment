@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rYYq0aAiERg=",
+  "dgSpecHash": "lihe7+7FIiE=",
   "success": true,
-  "projectFilePath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
+  "projectFilePath": "/home/md-sojib-hosen/Sojib/Ess/FrontEnd-Assignment/BackEnd/Src/BuildingBlocks/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

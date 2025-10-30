@@ -5,8 +5,11 @@
         <form [formGroup]="form" id="customerForm" (ngSubmit)="addcustomer()">
             <label>
                 Name:
-                <input type="text" id="customerName" formControlName="name"  customerUniqueName (duplicateCheck)="hasName($event)"/>
+                <input type="text" id="customerName" formControlName="name"  
+                customerUniqueName (duplicateCheck)="hasName($event)"/>
                 @if(hasNameExists) {<p class="inputErrorMessage">This customer name already exists</p>}
+                @if(form.controls['name'].errors?.['onlySpaces']){<p class="inputErrorMessage">
+                    Name cannot be empty or spaces {{form.controls['name'].errors?.['onlySpaces']}}</p>}
             </label>
             <button type="submit">Add Customer</button>
         </form>
