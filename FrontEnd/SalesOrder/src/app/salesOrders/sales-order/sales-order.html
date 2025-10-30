@@ -1,44 +1,69 @@
 <main>
     <div class="order-card">
-        <form  formGroup="form" id="salesOrderForm">
+        <form [formGroup]="form" id="salesOrderForm">
             <h4 class="mb-3 text-primary">Order Information</h4>
             <div class="row g-3 mb-4">
                 <div class="col-md-4">
-                    <label class="form-label">Order No</label>
-                    <input type="text" class="form-control" name="orderNo" placeholder="SO-XXXX" required />
+                    <label class="form-label">Order No<span class="required">*</span></label>
+                    <input type="text" class="form-control" name="orderNo" placeholder="SO-XXXX" 
+                        OrderNumberUniqueness (duplicateCheck)="hasOrderNo($event)" formControlName="orderNo" />
+                     @if(hasOrderNoExists) {<p class="inputErrorMessage">This order no already exists</p>}
                 </div>
                 <div class="col-md-4">
-                    <label class="form-label">Order Date</label>
-                    <input type="datetime-local" class="form-control" name="orderDate" required />
+                    <label class="form-label">Order Date<span class="required">*</span></label>
+                    <input type="date" class="form-control" name="orderDate" formControlName="orderDate" />
                 </div>
                 <div class="col-md-4">
-                    <label class="form-label">Customer</label>
+                    <label class="form-label">Customer<span class="required">*</span></label>
                     <label class="customerType">
-                        <label for="existing"><input id="existing" type="radio" name="customerType"> Existing</label>
-                        <label for="new"><input id="new" type="radio" name="customerType"> New</label>
-                        <label for="guest"><input id="guest" type="radio" name="customerType"> Guest</label>
+                        <label for="existing"><input id="existing" type="radio" name="customerType" formControlName="customerType"
+                             value="existing" (change)="onSeletedCustomerType($event)"> Existing</label>
+                        <label for="new"><input id="new" type="radio" name="customerType" formControlName="customerType" 
+                            value="new" (change)="onSeletedCustomerType($event)"> New</label>
+                        <label for="guest"><input id="guest" type="radio" name="customerType" formControlName="customerType"
+                             value="guest" (change)="onSeletedCustomerType($event)"> Guest</label>
                     </label>
-                    <input type="text" class="form-control" name="customerId" placeholder="Enter customer ID"
-                        required />
+                    @if(form.value.customerType == "existing")
+                    {
+                        <select class="form-control" formControlName="customerExist">
+                            <option [value]="null" disabled selected>Select a customer</option>
+                            @for (item of salesOrderService.customers(); track $index)
+                            {
+                                <option [value]="item.Id">{{item.Name}}</option>
+                            }
+                        </select>
+                    }
+                    @if(form.value.customerType == "new")
+                    {
+                        <input type="text" class="form-control" name="customerId" placeholder="Enter customer name"
+                        formControlName="customerNew" />
+                    }
+                    @if(form.value.customerType == "guest")
+                    {
+                         <input type="text" class="form-control" name="customerId" placeholder="No customer name needed" disabled=true />
+                    }
                 </div>
                 <div class="col-md-4">
                     <label class="form-label">Order Status</label>
-                    <select class="form-select" name="orderStatus" required>
-                        <option value="">Select status</option>
-                        <option value="1">Pending</option>
-                        <option value="2">Processing</option>
-                        <option value="3">Shipped</option>
-                        <option value="4">Completed</option>
-                        <option value="5">Cancelled</option>
+                    <select class="form-select" name="orderStatus" formControlName="orderStatus">
+                        <option [value]="null" selected disabled>Select status</option>
+                        <option [value]="1">Pending</option>
+                        <option [value]="2">Processing</option>
+                        <option [value]="3">Shipped</option>
+                        <option [value]="4">Completed</option>
+                        <option [value]="5">Cancelled</option>
                     </select>
                 </div>
                 <div class="col-md-4">
-                    <label class="form-label">VAT</label>
-                    <input type="text" class="form-control" name="vat" placeholder="10%" required />
+                    <label class="form-label">VAT (%)</label>
+                    <input type="number" class="form-control" name="vat"  
+                            canNotLessThanZero (islessthanZero)="hasVatError($event)" formControlName="vat"/>
+                    @if(vatError) {<p class="inputErrorMessage">VAT Can not be less than Zero</p>}
                 </div>
                 <div class="col-md-4">
-                    <label class="form-label">Discount</label>
-                    <input type="text" class="form-control" name="discount" placeholder="15%" required />
+                    <label class="form-label">Discount (%)</label>
+                    <input type="number" class="form-control" name="discount" canNotLessThanZero (islessthanZero)="hasDiscountError($event)" formControlName="discount"/>
+                     @if(discountError) {<p class="inputErrorMessage">Discount Can not be less than Zero</p>}
                 </div>
             </div>
 

@@ -40,3 +40,16 @@ main {
 {
     margin-left: 5px;
 }
+
+.required
+{
+    color: red;
+}
+
+.inputErrorMessage
+{
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+    margin-left: 5px;
+}
