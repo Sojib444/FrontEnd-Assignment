@@ -1,6 +1,5 @@
 import { Component, input, output } from '@angular/core';
 import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
-import '@angular/localize/init';
 
 @Component({
   selector: 'app-pagination',

@@ -1,33 +1,38 @@
 <div class="container">
-    <!-- Left: Customer Form -->
+    <!-- Left: Product Form -->
     <div class="form-section">
-        <h2>Add Customer</h2>
-        <form [formGroup]="form" id="customerForm" (ngSubmit)="addcustomer()">
+        <h2>Add Product</h2>
+        <form [formGroup]="form" id="productForm" (ngSubmit)="addProduct()">
             <label>
                 Name:
-                <input type="text" id="customerName" formControlName="name"  customerUniqueName (duplicateCheck)="hasName($event)"/>
-                @if(hasNameExists) {<p class="inputErrorMessage">This customer name already exists</p>}
+                <input type="text" id="productName" formControlName="name" />
             </label>
-            <button type="submit">Add Customer</button>
+            <label>
+                Unit Price:
+                <input type="number" id="cu" formControlName="unitPrice" />
+            </label>
+            <button type="submit">Add Product</button>
         </form>
     </div>
 
-    <!-- Right: Customer List -->
+    <!-- Right: Product List -->
     <div class="list-section">
-        <h2>Customer List</h2>
+        <h2>Product List</h2>
         <table>
             <thead>
                 <tr>
                     <th>Serial</th>
                     <th>Name</th>
+                    <th>Unit Price</th>
                 </tr>
             </thead>
-            <tbody id="customerTableBody">
-                @for(item of pagedCustomers(); track $index)
+            <tbody id="productTableBody">
+                @for(item of pagedProducts(); track $index)
                 {
                 <tr>
                     <td>{{(currentPage() -1) * 10 + $index + 1 }}</td>
                     <td>{{item.Name}}</td>
+                    <td class="price">{{item.UnitPrice | moneyFormate}}</td>
                 </tr>
                 }
             </tbody>
