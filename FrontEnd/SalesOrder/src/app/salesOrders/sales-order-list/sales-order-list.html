@@ -1,0 +1,87 @@
+<!-- Sales Order List -->
+<div class="sales-order-container">
+  <div class="sales-order-card">
+    <h2 class="title">Sales Order List</h2>
+
+    <!-- Filter Section -->
+    <div class="filter-section">
+      <div class="filter-group">
+        <label>Order No</label>
+        <input type="text" placeholder="Search..." [(ngModel)]="searchTerm" />
+      </div>
+
+      <div class="filter-group">
+        <label>Order Status</label>
+        <select  [(ngModel)]="selectedStatus">
+          <option value="">All</option>
+          <option value="1">Pending</option>
+          <option value="2">Processing</option>
+          <option value="3">Shipped</option>
+          <option value="4">Completed</option>
+          <option value="5">Cancelled</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Customer</label>
+        <select [(ngModel)]="selectedCustomer">
+          <option value="">All</option>
+          @for(item of salesOrderService.customers(); track $index)
+          {
+            <option [value]="item.Id">{{ item.Name }}</option>
+          }
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Order Date</label>
+        <input type="date" [(ngModel)]="selectedDate" />
+      </div>
+
+      <button class="btn btn-primary" (click)="applyFilters()">Filter</button>
+      <button class="btn btn-danger" (click)="clearFilters()">Clear</button>
+    </div>
+
+    <!-- Table Section -->
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Order No</th>
+            <th>Order Date <span class="sort-icon">⇅</span></th>
+            <th>Customer</th>
+            <th>Order Status</th>
+            <th>Total Amount <span class="sort-icon">⇅</span></th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+            @for (item of pagedSalesOrders(); track $index) 
+            {
+                <tr>
+                    <td>{{item.orderNo}}</td>
+                    <td>{{item.orderDate | date:'dd/MM/yyyy'}}</td>
+                    <td class="customerName">{{item.customerExist! | customerName}}</td>
+                    <td> <span  class="badge"
+                      [ngClass]="{
+                        'badge-pending': item.orderStatus == 1,
+                        'badge-processing': item.orderStatus == 2,
+                        'badge-success': item.orderStatus == 3,
+                        'badge-cancelled': item.orderStatus == 4,
+                      }">{{item.orderStatus | orderStatus}}</span></td>
+                    <td class="totalAmount">{{item.totalAmount | money}}</td>
+                    <td>
+                    <button class="btn btn-warning">Update</button>
+                    <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            }           
+        </tbody>
+      </table>
+      <div class="pagination-container">
+          <app-pagination [page]="currentPage()" [totalLength]="filteredOrders().length" 
+          (selectedPage)="onPageChange($event)"></app-pagination>     
+      </div>  
+    </div>
+  </div>
+</div>

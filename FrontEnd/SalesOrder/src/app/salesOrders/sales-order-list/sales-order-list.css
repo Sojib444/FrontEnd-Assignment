@@ -1,0 +1,193 @@
+/* Center the container vertically and horizontally */
+.sales-order-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc;
+  padding: 20px;
+}
+
+/* Card styling */
+.sales-order-card {
+  background: #ffffff;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Filter section */
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.filter-group input,
+.filter-group select {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 10px;
+  min-width: 180px;
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  margin-left: 5px;
+  padding: 8px 29px;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-warning {
+  background: #f59e0b;
+  color: #fff;
+}
+
+.btn-warning:hover {
+  background: #d97706;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+/* Table styles */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f1f5f9;
+}
+
+th,
+td {
+  padding: 10px 12px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Badges */
+.badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.badge.success {
+  background: #10b981;
+}
+
+.badge.pending {
+  background: #f59e0b;
+}
+
+.badge.cancelled {
+  background: #ef4444;
+}
+
+/* Sorting icon */
+.sort-icon {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.totalAmount
+{
+    text-align: right;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  margin-top: 20px;        /* optional spacing from top */
+}
+
+.customerName
+{
+    text-align: left;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Status-specific colors */
+.badge-pending {
+  background-color: #f59e0b; /* amber */
+}
+
+.badge-processing {
+  background-color: #3b82f6; /* blue */
+}
+
+.badge-success {
+  background-color: #10b981; /* green */
+}
+
+.badge-cancelled {
+  background-color: #ef4444; /* red */
+}

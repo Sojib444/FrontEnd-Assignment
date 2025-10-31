@@ -1,30 +1,53 @@
-export interface SalesOrder
-{
-    Id: string;
-    OrderNo: string;
-    OrderDate: Date;
-    TotalAmount: number;
-    CustomerId: string;
-    OrderStatus: OrderStatus;
-    Vat: number;
-    Discount: number;
-    OrderItems: SalesOrderItem[];
-}
+// export interface SalesOrder
+// {
+//     id: string;
+//     orderNo: string;
+//     OrderDate: Date;
+//     totalAmount: number;
+//     customerId: string;
+//     orderStatus: OrderStatus;
+//     vat: number;
+//     discount: number;
+//     orderItems: SalesOrderItem[];
+// }
 
-export interface SalesOrderItem
-{
-    Id: string;
-    SalesOrderId: string;
-    ProductId: string;
-    Quantity: number;
-    UnitPrice: number;
-    SubTotal: number;
-}
+// export interface SalesOrderItem
+// {
+//     Id: string;
+//     SalesOrderId: string;
+//     ProductId: string;
+//     Quantity: number;
+//     UnitPrice: number;
+//     SubTotal: number;
+// }
 
 export enum OrderStatus
 {
     Pending =1,
-    InProgress,
-    Deliverd,
-    Complete
+    Processing,
+    Shipped,
+    Completed,
+    Cancelled
+}
+
+
+export interface OrderItem {
+  productId: string;
+  quantity: number;
+  unitPrice: number;
+  subtotal: number;
+}
+
+export interface SalesOrder {
+  id: string;
+  orderNo: string;
+  orderDate: string; // or Date if you convert it after fetching
+  customerType: 'existing' | 'new';
+  customerExist?: string | null;
+  customerNew?: string | null;
+  orderStatus: OrderStatus; // you can change to enum if you have OrderStatus enum
+  vat: number;
+  discount: number;
+  orderItems: OrderItem[];
+  totalAmount: number;
 }

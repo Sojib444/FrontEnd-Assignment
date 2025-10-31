@@ -25,7 +25,7 @@ export class OrderNumberUniqueness {
         map(value => {
           if (!value)
             return false;
-          let salesOrder = this.salesOrderService.salesOrders().find(x => x.OrderNo == value);
+          let salesOrder = this.salesOrderService.salesOrders().find(x => x.orderNo == value);
           if (salesOrder)
             return true;
           return false;

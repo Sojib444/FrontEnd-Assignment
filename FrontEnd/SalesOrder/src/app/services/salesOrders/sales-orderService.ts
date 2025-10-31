@@ -16,6 +16,13 @@ export class SalesOrderService {
 
   constructor(private httpClient : HttpClient)
   {
+    this.loadcustomers().subscribe(data => {
+      this.customers.set(data);
+    })
+
+    this.loadSalesOrders().subscribe(data => {
+      this.salesOrders.set(data);
+    })
   }
 
   loadSalesOrders()

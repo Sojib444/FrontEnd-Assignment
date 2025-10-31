@@ -34,6 +34,31 @@
       "id": "080a",
       "Id": "f10af5a4-f62b-41d9-a742-0eb6b938d820",
       "Name": "fdgdf"
+    },
+    {
+      "id": "2d85",
+      "Id": "627f7736-71e1-4878-85ac-7599e380bbac",
+      "Name": "Saddam"
+    },
+    {
+      "id": "c543",
+      "Id": "9cd73cca-2405-46cb-bab9-d1ea8013c31c",
+      "Name": "abir"
+    },
+    {
+      "id": "a577",
+      "Id": "c407e73d-2cc8-45de-baf9-c56b69930584",
+      "Name": "Shafiq"
+    },
+    {
+      "id": "0e3b",
+      "Id": "c15d9cd6-0541-405e-8c64-240513cbe263",
+      "Name": "Sabbir"
+    },
+    {
+      "id": "7b0a",
+      "Id": "400d5c25-b15c-424e-aa15-e5fc7b2d98bb",
+      "Name": "Aksh"
     }
   ],
   "products": [
@@ -220,14 +245,60 @@
   ],
   "salesorders": [
     {
-      "id": "3bf97f92-7a20-4c33-bcb9-7f32c289e44c",
-      "orderNo": "SO-X7872",
+      "id": "a843dc3a-e5d6-40a8-8380-81ae2010157d",
+      "orderNo": "SO-X5476",
       "orderDate": "2025-10-31",
       "customerType": "existing",
-      "customerExist": "7d5f1c42-45a8-43d3-b218-9c912bca2a12",
+      "customerExist": "a32f6b1e-7a3b-4b66-b729-df31f8124b99",
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 2,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "b4c5d6e7-f8a9-4a75-4d56-123456789abc",
+          "quantity": 3,
+          "unitPrice": 189,
+          "subtotal": 567
+        },
+        {
+          "productId": "d0e1f2a3-b4c5-4631-0912-def012345678",
+          "quantity": 3,
+          "unitPrice": 34,
+          "subtotal": 102
+        }
+      ],
+      "totalAmount": 681.945208
+    },
+    {
+      "id": "2335ce01-3739-4598-bd12-794dc414157a",
+      "orderNo": "SO-X478",
+      "orderDate": "2015-10-07",
+      "customerType": "existing",
+      "customerExist": "c4c3f679-003c-4cb7-8bd9-8a70b94424c5",
       "customerNew": null,
       "orderStatus": "1",
-      "vat": 13,
+      "vat": 16,
+      "discount": 65,
+      "orderItems": [
+        {
+          "productId": "d6e7f8a9-b0c1-4c97-6f78-3456789abcde",
+          "quantity": 4,
+          "unitPrice": 15,
+          "subtotal": 60
+        }
+      ],
+      "totalAmount": 44.25298515
+    },
+    {
+      "id": "5040e45c-244d-477a-b674-db0f89d405f7",
+      "orderNo": "SO-X1631",
+      "orderDate": "2025-10-08",
+      "customerType": "existing",
+      "customerExist": "e71c5b39-6c2f-4db7-94f1-f812b7124cd1",
+      "customerNew": null,
+      "orderStatus": "2",
+      "vat": 3,
       "discount": 3,
       "orderItems": [
         {
@@ -237,29 +308,357 @@
           "subtotal": 7
         },
         {
-          "productId": "e7f8a9b0-c1d2-4da8-7899-456789abcdef",
-          "quantity": 3,
-          "unitPrice": 59,
-          "subtotal": 177
+          "productId": "c7d8e9f0-a1b2-4742-1223-ef0123456789",
+          "quantity": 4,
+          "unitPrice": 5,
+          "subtotal": 20
+        },
+        {
+          "productId": "d8e9f0a1-b2c3-4853-2334-f0123456789a",
+          "quantity": 4,
+          "unitPrice": 22,
+          "subtotal": 88
+        }
+      ],
+      "totalAmount": 115
+    },
+    {
+      "id": "efff914f-3539-4c6e-a3f9-47d01100e29f",
+      "orderNo": "SO-X42071",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "a32f6b1e-7a3b-4b66-b729-df31f8124b99",
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 3,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "d8e9f0a1-b2c3-4853-2334-f0123456789a",
+          "quantity": 1,
+          "unitPrice": 22,
+          "subtotal": 22
+        },
+        {
+          "productId": "c7d8e9f0-a1b2-4742-1223-ef0123456789",
+          "quantity": 1,
+          "unitPrice": 5,
+          "subtotal": 5
         },
         {
           "productId": "d0e1f2a3-b4c5-4631-0912-def012345678",
           "quantity": 1,
           "unitPrice": 34,
           "subtotal": 34
-        },
-        {
-          "productId": "f6a7b8c9-d0e1-42fd-c678-9abcdef01234",
-          "quantity": 1,
-          "unitPrice": 79,
-          "subtotal": 79
         }
       ],
-      "totalAmount": 330.4168521345173
+      "totalAmount": 62.83
     },
     {
-      "id": "d9bf9177-3246-4db8-9a18-344cf66a1ef4",
-      "orderNo": "SO-X40011",
+      "id": "3f84139d-1562-48f5-8b1e-5481db312cda",
+      "orderNo": "SO-X65911",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "627f7736-71e1-4878-85ac-7599e380bbac",
+      "customerNew": null,
+      "orderStatus": "2",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "a3b4c5d6-e7f8-4964-3c45-0123456789ab",
+          "quantity": 1,
+          "unitPrice": 9,
+          "subtotal": 9
+        },
+        {
+          "productId": "b6c7d8e9-f0a1-4631-0112-def012345678",
+          "quantity": 1,
+          "unitPrice": 18,
+          "subtotal": 18
+        },
+        {
+          "productId": "c7d8e9f0-a1b2-4742-1223-ef0123456789",
+          "quantity": 1,
+          "unitPrice": 5,
+          "subtotal": 5
+        }
+      ],
+      "totalAmount": 32
+    },
+    {
+      "id": "8e7928a5-9cf9-45b9-8bc0-212dae74c871",
+      "orderNo": "SO-X95961",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "9cd73cca-2405-46cb-bab9-d1ea8013c31c",
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 2,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "d6e7f8a9-b0c1-4c97-6f78-3456789abcde",
+          "quantity": 3,
+          "unitPrice": 15,
+          "subtotal": 45
+        },
+        {
+          "productId": "d8e9f0a1-b2c3-4853-2334-f0123456789a",
+          "quantity": 4,
+          "unitPrice": 22,
+          "subtotal": 88
+        }
+      ],
+      "totalAmount": 135.25614672
+    },
+    {
+      "id": "490ad7d5-5dd9-4680-a049-6c757bb3460c",
+      "orderNo": "SO-X4250",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "f10af5a4-f62b-41d9-a742-0eb6b938d820",
+      "customerNew": null,
+      "orderStatus": "4",
+      "vat": 3,
+      "discount": 2,
+      "orderItems": [
+        {
+          "productId": "d6e7f8a9-b0c1-4c97-6f78-3456789abcde",
+          "quantity": 1,
+          "unitPrice": 15,
+          "subtotal": 15
+        },
+        {
+          "productId": "f2a3b4c5-d6e7-4853-2b34-f0123456789a",
+          "quantity": 1,
+          "unitPrice": 14,
+          "subtotal": 14
+        }
+      ],
+      "totalAmount": 29.29
+    },
+    {
+      "id": "1bb5fcef-a323-40ca-a8c0-8ad59404e39d",
+      "orderNo": "SO-X4631",
+      "orderDate": "2025-10-31",
+      "customerType": "guest",
+      "customerExist": null,
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "c7d8e9f0-a1b2-4742-1223-ef0123456789",
+          "quantity": 3,
+          "unitPrice": 5,
+          "subtotal": 15
+        }
+      ],
+      "totalAmount": 15
+    },
+    {
+      "id": "0f12e191-5915-4cdc-9d22-ab2368a3e9ee",
+      "orderNo": "SO-X6939",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "e71c5b39-6c2f-4db7-94f1-f812b7124cd1",
+      "customerNew": null,
+      "orderStatus": "2",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "e7f8a9b0-c1d2-4da8-7899-456789abcdef",
+          "quantity": 1,
+          "unitPrice": 59,
+          "subtotal": 59
+        }
+      ],
+      "totalAmount": 59
+    },
+    {
+      "id": "889ff78c-659a-48c6-a9ab-074d950c5b54",
+      "orderNo": "SO-X35321",
+      "orderDate": "2025-10-31",
+      "customerType": "guest",
+      "customerExist": null,
+      "customerNew": null,
+      "orderStatus": "2",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "c5d6e7f8-a9b0-4b86-5e67-23456789abcd",
+          "quantity": 1,
+          "unitPrice": 7,
+          "subtotal": 7
+        }
+      ],
+      "totalAmount": 7
+    },
+    {
+      "id": "0faca422-544f-418c-ae01-9d5ce9f0bdea",
+      "orderNo": "SO-X11521",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "c407e73d-2cc8-45de-baf9-c56b69930584",
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "c5d6e7f8-a9b0-4b86-5e67-23456789abcd",
+          "quantity": 1,
+          "unitPrice": 7,
+          "subtotal": 7
+        },
+        {
+          "productId": "f2a3b4c5-d6e7-4853-2b34-f0123456789a",
+          "quantity": 1,
+          "unitPrice": 14,
+          "subtotal": 14
+        }
+      ],
+      "totalAmount": 21
+    },
+    {
+      "id": "dbc18742-7118-44be-b2c2-a4428b8803e8",
+      "orderNo": "SO-X58631",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "627f7736-71e1-4878-85ac-7599e380bbac",
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 3,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "f2a3b4c5-d6e7-4853-2b34-f0123456789a",
+          "quantity": 4,
+          "unitPrice": 14,
+          "subtotal": 56
+        }
+      ],
+      "totalAmount": 57.285589569068
+    },
+    {
+      "id": "0fc54110-3c1c-4d2f-9589-f073f552f933",
+      "orderNo": "SO-X82411",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "99184c59-1d6a-461e-86eb-a1bd7df32d8b",
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "b6c7d8e9-f0a1-4631-0112-def012345678",
+          "quantity": 3,
+          "unitPrice": 18,
+          "subtotal": 54
+        }
+      ],
+      "totalAmount": 54
+    },
+    {
+      "id": "21bc80f3-cf37-421d-be33-ace64af4ea11",
+      "orderNo": "SO-X2982",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "a32f6b1e-7a3b-4b66-b729-df31f8124b99",
+      "customerNew": null,
+      "orderStatus": "2",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "d6e7f8a9-b0c1-4c97-6f78-3456789abcde",
+          "quantity": 1,
+          "unitPrice": 15,
+          "subtotal": 15
+        }
+      ],
+      "totalAmount": 15
+    },
+    {
+      "id": "cae0bd3f-2133-4eea-a91e-1b218e2242a6",
+      "orderNo": "SO-X9561",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "f10af5a4-f62b-41d9-a742-0eb6b938d820",
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "b4c5d6e7-f8a9-4a75-4d56-123456789abc",
+          "quantity": 1,
+          "unitPrice": 189,
+          "subtotal": 189
+        }
+      ],
+      "totalAmount": 189
+    },
+    {
+      "id": "344119d8-b1a4-4d37-8ec8-99cb5836d2cd",
+      "orderNo": "SO-X8522",
+      "orderDate": "2025-10-31",
+      "customerType": "guest",
+      "customerExist": null,
+      "customerNew": null,
+      "orderStatus": "2",
+      "vat": 3,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "d8e9f0a1-b2c3-4853-2334-f0123456789a",
+          "quantity": 4,
+          "unitPrice": 22,
+          "subtotal": 88
+        }
+      ],
+      "totalAmount": 90.02021182
+    },
+    {
+      "id": "1a740855-f986-4f90-a6f2-8e992bea0a94",
+      "orderNo": "SO-X57171",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "99184c59-1d6a-461e-86eb-a1bd7df32d8b",
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "c5d6e7f8-a9b0-4b86-5e67-23456789abcd",
+          "quantity": 1,
+          "unitPrice": 7,
+          "subtotal": 7
+        },
+        {
+          "productId": "b6c7d8e9-f0a1-4631-0112-def012345678",
+          "quantity": 1,
+          "unitPrice": 18,
+          "subtotal": 18
+        },
+        {
+          "productId": "b6c7d8e9-f0a1-4631-0112-def012345678",
+          "quantity": 1,
+          "unitPrice": 18,
+          "subtotal": 18
+        }
+      ],
+      "totalAmount": 43
+    },
+    {
+      "id": "f2936944-c9bd-47cc-b119-6541f1dde773",
+      "orderNo": "SO-X23441",
       "orderDate": "2025-10-31",
       "customerType": "existing",
       "customerExist": "99184c59-1d6a-461e-86eb-a1bd7df32d8b",
@@ -269,79 +668,225 @@
       "discount": 0,
       "orderItems": [
         {
-          "productId": "f8a9b0c1-d2e3-4eb9-89aa-56789abcdef0",
+          "productId": "d8e9f0a1-b2c3-4853-2334-f0123456789a",
           "quantity": 1,
-          "unitPrice": 89,
-          "subtotal": 89
+          "unitPrice": 22,
+          "subtotal": 22
         },
         {
-          "productId": "a3b4c5d6-e7f8-4964-3c45-0123456789ab",
+          "productId": "b6c7d8e9-f0a1-4631-0112-def012345678",
           "quantity": 1,
-          "unitPrice": 9,
-          "subtotal": 9
+          "unitPrice": 18,
+          "subtotal": 18
         }
       ],
-      "totalAmount": 98
+      "totalAmount": 40
     },
     {
-      "id": "0d2aea95-2af7-4339-a81b-e934f948ab25",
-      "orderNo": "SO-X8299",
+      "id": "ea2e2fb1-8a70-4b03-8f7a-a8c890c67f75",
+      "orderNo": "SO-X87911",
       "orderDate": "2025-10-31",
       "customerType": "existing",
-      "customerExist": "c4c3f679-003c-4cb7-8bd9-8a70b94424c5",
+      "customerExist": "c15d9cd6-0541-405e-8c64-240513cbe263",
       "customerNew": null,
-      "orderStatus": "1",
-      "vat": 2,
+      "orderStatus": "4",
+      "vat": 0,
       "discount": 0,
       "orderItems": [
         {
-          "productId": "c5d6e7f8-a9b0-4b86-5e67-23456789abcd",
-          "quantity": 3,
-          "unitPrice": 7,
-          "subtotal": 21
+          "productId": "d8e9f0a1-b2c3-4853-2334-f0123456789a",
+          "quantity": 1,
+          "unitPrice": 22,
+          "subtotal": 22
+        },
+        {
+          "productId": "b6c7d8e9-f0a1-4631-0112-def012345678",
+          "quantity": 1,
+          "unitPrice": 18,
+          "subtotal": 18
+        },
+        {
+          "productId": "c7d8e9f0-a1b2-4742-1223-ef0123456789",
+          "quantity": 1,
+          "unitPrice": 5,
+          "subtotal": 5
+        },
+        {
+          "productId": "a5b6c7d8-e9f0-4520-f001-cdef01234567",
+          "quantity": 1,
+          "unitPrice": 99,
+          "subtotal": 99
         }
       ],
-      "totalAmount": 21.4242
+      "totalAmount": 144
     },
     {
-      "id": "571ee192-b7f9-433d-86c3-9c163d966909",
-      "orderDate": "2025-10-31",
-      "customerType": "guest",
-      "customerExist": null,
-      "customerNew": null,
-      "orderStatus": "2",
-      "vat": 0,
-      "discount": 5,
-      "orderItems": [
-        {
-          "productId": "b4c5d6e7-f8a9-4a75-4d56-123456789abc",
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "id": "7e8abeba-0f22-4bbd-b7c0-0822629ccf1d",
-      "orderNo": "SO-X97921",
+      "id": "9a1d8b99-3b94-41dc-9f7c-7ee7e0bdc6cd",
+      "orderNo": "SO-X59701",
       "orderDate": "2025-10-31",
       "customerType": "existing",
-      "customerExist": "7d5f1c42-45a8-43d3-b218-9c912bca2a12",
-      "customerNew": null,
-      "orderStatus": "2",
-      "vat": 0,
-      "discount": 0,
-      "orderItems": [],
-      "totalAmount": null
-    },
-    {
-      "id": "dcc67ba4-5385-4f63-96a1-5b0849bbcd3f",
-      "orderDate": "2025-10-31",
-      "customerType": "guest",
-      "customerExist": null,
+      "customerExist": "e71c5b39-6c2f-4db7-94f1-f812b7124cd1",
       "customerNew": null,
       "orderStatus": "3",
       "vat": 0,
       "discount": 0,
-      "orderItems": []
+      "orderItems": [
+        {
+          "productId": "d8e9f0a1-b2c3-4853-2334-f0123456789a",
+          "quantity": 1,
+          "unitPrice": 22,
+          "subtotal": 22
+        },
+        {
+          "productId": "d8e9f0a1-b2c3-4853-2334-f0123456789a",
+          "quantity": 1,
+          "unitPrice": 22,
+          "subtotal": 22
+        },
+        {
+          "productId": "f6a7b8c9-d0e1-42fd-c678-9abcdef01234",
+          "quantity": 1,
+          "unitPrice": 79,
+          "subtotal": 79
+        }
+      ],
+      "totalAmount": 123
+    },
+    {
+      "id": "d8422b18-a5f3-41e1-be0a-77ef92b6aa00",
+      "orderNo": "SO-X75311",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "f10af5a4-f62b-41d9-a742-0eb6b938d820",
+      "customerNew": null,
+      "orderStatus": "2",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "d8e9f0a1-b2c3-4853-2334-f0123456789a",
+          "quantity": 1,
+          "unitPrice": 22,
+          "subtotal": 22
+        },
+        {
+          "productId": "c7d8e9f0-a1b2-4742-1223-ef0123456789",
+          "quantity": 1,
+          "unitPrice": 5,
+          "subtotal": 5
+        }
+      ],
+      "totalAmount": 27
+    },
+    {
+      "id": "58108e6a-529b-4641-b9f2-9a68e2e45ae9",
+      "orderNo": "SO-X91901",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "400d5c25-b15c-424e-aa15-e5fc7b2d98bb",
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 5,
+      "discount": 4,
+      "orderItems": [
+        {
+          "productId": "e9f0a1b2-c3d4-4964-3445-0123456789ab",
+          "quantity": 1,
+          "unitPrice": 27,
+          "subtotal": 27
+        }
+      ],
+      "totalAmount": 27.27
+    },
+    {
+      "id": "9dc0e9a9-fd0d-4c8d-9561-a6ee80187aaa",
+      "orderNo": "SO-X64031",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "e71c5b39-6c2f-4db7-94f1-f812b7124cd1",
+      "customerNew": null,
+      "orderStatus": "2",
+      "vat": 3,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "d8e9f0a1-b2c3-4853-2334-f0123456789a",
+          "quantity": 1,
+          "unitPrice": 22,
+          "subtotal": 22
+        },
+        {
+          "productId": "b6c7d8e9-f0a1-4631-0112-def012345678",
+          "quantity": 4,
+          "unitPrice": 18,
+          "subtotal": 72
+        },
+        {
+          "productId": "c7d8e9f0-a1b2-4742-1223-ef0123456789",
+          "quantity": 1,
+          "unitPrice": 5,
+          "subtotal": 5
+        },
+        {
+          "productId": "b4c5d6e7-f8a9-4a75-4d56-123456789abc",
+          "quantity": 1,
+          "unitPrice": 189,
+          "subtotal": 189
+        }
+      ],
+      "totalAmount": 296.33330754
+    },
+    {
+      "id": "a7a8b65e-c0a7-4824-b895-92acf0e55401",
+      "orderNo": "SO-X55081",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "99184c59-1d6a-461e-86eb-a1bd7df32d8b",
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "d8e9f0a1-b2c3-4853-2334-f0123456789a",
+          "quantity": 1,
+          "unitPrice": 22,
+          "subtotal": 22
+        },
+        {
+          "productId": "a5b6c7d8-e9f0-4520-f001-cdef01234567",
+          "quantity": 1,
+          "unitPrice": 99,
+          "subtotal": 99
+        },
+        {
+          "productId": "c7d8e9f0-a1b2-4742-1223-ef0123456789",
+          "quantity": 1,
+          "unitPrice": 5,
+          "subtotal": 5
+        }
+      ],
+      "totalAmount": 126
+    },
+    {
+      "id": "a84540e7-9e7a-418f-895b-19a379f21d36",
+      "orderNo": "SO-X9889",
+      "orderDate": "2025-10-31",
+      "customerType": "existing",
+      "customerExist": "5b3c4f74-2b6d-4cf3-a8f2-1b1b9c5b01a1",
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "d6e7f8a9-b0c1-4c97-6f78-3456789abcde",
+          "quantity": 1,
+          "unitPrice": 15,
+          "subtotal": 15
+        }
+      ],
+      "totalAmount": 15
     }
   ]
 }

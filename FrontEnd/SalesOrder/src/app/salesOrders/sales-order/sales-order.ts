@@ -207,7 +207,7 @@ export class SalesOrder {
       this.form.patchValue({
         customerExist: null
       })
-      this.salesOrderService.addSalesOrder(this.form.value).subscribe(data => {
+      this.salesOrderService.addSalesOrder(this.form.getRawValue()).subscribe(data => {
         this.resetForm();
       })
     }
