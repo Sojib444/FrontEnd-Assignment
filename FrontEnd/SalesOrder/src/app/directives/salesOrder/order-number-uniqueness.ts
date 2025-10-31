@@ -12,7 +12,9 @@ export class OrderNumberUniqueness {
 
   constructor(private el: ElementRef) {
     this.initListener();
-    this.salesOrderService.loadData();
+    this.salesOrderService.loadSalesOrders().subscribe(data => {
+      this.salesOrderService.salesOrders.set(data);
+    });
   }
 
   private initListener() {

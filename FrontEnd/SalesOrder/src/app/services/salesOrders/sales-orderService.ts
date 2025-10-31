@@ -3,6 +3,7 @@ import { Injectable, signal } from '@angular/core';
 import { SalesOrder as SalesOrderData} from '../../abstraction/model/SalesOrder';
 import { url } from '../../configuration/url';
 import { Customer as CustomerData } from '../../abstraction/model/customer';
+import { Product as ProductData } from '../../abstraction/model/product';
 
 @Injectable({
   providedIn: 'root'
@@ -11,20 +12,24 @@ export class SalesOrderService {
 
   salesOrders = signal<SalesOrderData[]>([]);
   customers = signal<CustomerData[]>([]);
-  serverUrl: string = url + 'salesorders';
+  products = signal<ProductData[]>([]);
 
   constructor(private httpClient : HttpClient)
   {
   }
 
-  loadData()
+  loadSalesOrders()
   {
-     this.httpClient.get<SalesOrderData[]>(url+ 'salesorders').subscribe(data => {
-      this.salesOrders.set(data);
-     })
+      return this.httpClient.get<SalesOrderData[]>(url+ 'salesorders');
+  }
 
-      this.httpClient.get<CustomerData[]>(url+ 'customers').subscribe(data => {
-      this.customers.set(data);
-     })
-  }    
+  loadProducts()
+  {
+     return this.httpClient.get<ProductData[]>(url+ 'products');
+  }
+
+  loadcustomers()
+  {
+      return this.httpClient.get<CustomerData[]>(url+ 'customers');
+  }
 }
