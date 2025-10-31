@@ -35,15 +35,11 @@ export class SalesOrderService {
 
   addSalesOrder(salesOrder: SalesOrderData)
   {
-    return this.httpClient.post(url+"salesorders",{
-      salesOrder
-    })
+    return this.httpClient.post(url+"salesorders",salesOrder)
   }
 
   addCustomer(customer: CustomerData)
   {
-    return this.httpClient.post(url+ 'customers',{
-      customer
-    })
+    return this.httpClient.post(url+ 'customers',customer)
   }
 }

@@ -27,28 +27,36 @@
                     </label>
                     @if(form.value.customerType == "existing")
                     {
-                    <select class="form-control" formControlName="customerExist">
+                    <select class="form-control" formControlName="customerExist" (change)="onSelectedCustomer()">
                         <option [value]="null" disabled selected>Select a customer</option>
                         @for (item of salesOrderService.customers(); track $index)
                         {
-                        <option [value]="item.Id">{{item.Name}}</option>
+                           <option [value]="item.Id">{{item.Name}}</option>
                         }
                     </select>
                     }
                     @if(form.value.customerType == "new")
                     {
                     <input type="text" class="form-control" name="customerId" placeholder="Enter customer name"
-                        formControlName="customerNew" />
+                        formControlName="customerNew" (input)="onCustomerName()"/>
                     }
                     @if(form.value.customerType == "guest")
                     {
                     <input type="text" class="form-control" name="customerId" placeholder="No customer name needed"
                         disabled=true />
                     }
+                    @if(!isCustomerSelected)
+                    {
+                        <p class="inputErrorMessage">Customeer is required</p>
+                    }
+                    @if(!hasCustomerName)
+                    {
+                        <p class="inputErrorMessage">Customer name is required</p>
+                    }
                 </div>
                 <div class="col-md-4">
                     <label class="form-label">Order Status</label>
-                    <select class="form-select" name="orderStatus" formControlName="orderStatus">
+                    <select class="form-select" name="orderStatus" formControlName="orderStatus" (change)="onOrderStatusSelected()">
                         <option [value]="null" selected disabled>Select status</option>
                         <option [value]="1">Pending</option>
                         <option [value]="2">Processing</option>
@@ -56,17 +64,20 @@
                         <option [value]="4">Completed</option>
                         <option [value]="5">Cancelled</option>
                     </select>
+                    @if(!isOrderStatusSelected)
+                    {
+                        <p class="inputErrorMessage">Order status required</p>
+                    }
                 </div>
                 <div class="col-md-4">
                     <label class="form-label">VAT (%)</label>
-                    <input type="number" class="form-control" name="vat" canNotLessThanZero
-                        (islessthanZero)="hasVatError($event)" formControlName="vat" (change)="onVatChange()"/>
+                    <input type="number" class="form-control" name="vat" formControlName="vat" (change)="onVatChange()" min="0"/>
                     @if(vatError) {<p class="inputErrorMessage">VAT Can not be less than Zero</p>}
                 </div>
                 <div class="col-md-4">
                     <label class="form-label">Discount (%)</label>
                     <input type="number" class="form-control" name="discount" canNotLessThanZero
-                        (islessthanZero)="hasDiscountError($event)" formControlName="discount" (change)="onDiscountChange()"  />
+                        (islessthanZero)="hasDiscountError($event)" formControlName="discount" (change)="onDiscountChange()" min="0"  />
                     @if(discountError) {<p class="inputErrorMessage">Discount Can not be less than Zero</p>}
                 </div>
             </div>
@@ -99,8 +110,8 @@
                                 </select>
                             </td>
                             <td><input type="number" class="form-control" formControlName="quantity"
-                                    (input)="calcSubtotal(i)" canNotLessThanZero (islessthanZero)="hasQuantityError($event)">
-                                @if(quantityError) {<p class="inputErrorMessage">Quantity Can not be less than Zero</p>}</td>
+                                    (input)="calcSubtotal(i)" canNotLessThanZero (islessthanZero)="hasQuantityError($event)" min="1">
+                                @if(quantityError) {<p class="inputErrorMessage">Quantity can not be less than One</p>}</td>
                             <td><input type="number" class="form-control" formControlName="unitPrice"
                                     [disabled]="true"></td>
                             <td><input type="text" class="form-control" formControlName="subtotal" readonly></td>

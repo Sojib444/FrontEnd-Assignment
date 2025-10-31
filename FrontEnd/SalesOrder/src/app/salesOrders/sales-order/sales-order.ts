@@ -22,6 +22,12 @@ export class SalesOrder {
   salesOrderService = inject(SalesOrderService)
   selectedCustomerType: string = "existing"
 
+  isCustomerSelected: boolean = true;
+  isOrderStatusSelected: boolean = true;
+  vatLessThanZero: boolean = true;
+  discountLessThanZero: boolean = true;
+  hasCustomerName: boolean = true;
+
   constructor(private formBuilder: FormBuilder) {
     this.salesOrderService.loadcustomers().subscribe(data => {
       this.salesOrderService.customers.set(data);
@@ -31,9 +37,13 @@ export class SalesOrder {
       this.salesOrderService.products.set(data);
     })
 
+    this.salesOrderService.loadSalesOrders().subscribe(data => {
+      this.salesOrderService.salesOrders.set(data);
+    })
+
     this.form = new FormGroup({
       id: new FormControl(''),
-      orderNo: new FormControl('', Validators.required),
+      orderNo: new FormControl({value: this.orderNo, disabled: true}),
       orderDate: new FormControl(this.getToday(), Validators.required),
       customerType: new FormControl("existing"),
       customerExist: new FormControl(null),
@@ -44,8 +54,6 @@ export class SalesOrder {
       orderItems: new FormArray([]),
       totalAmount: new FormControl({ value: 0, disabled: true })
     })
-
-    console.log(this.orderItems);
   }
 
   createOrderItem(): FormGroup {
@@ -61,6 +69,12 @@ export class SalesOrder {
     return this.form.get('orderItems') as FormArray;
   }
 
+  get orderNo(): string
+  {
+    const lentgth = this.salesOrderService.salesOrders().length;
+    return 'SO-X' + Math.round(Math.random()*10000);
+  }
+
   SelectedProdut(i: number, event: Event) {
     const select = event.target as HTMLSelectElement;
     const selectedId = select.value;
@@ -74,30 +88,36 @@ export class SalesOrder {
 
     itemGroup.patchValue({
       unitPrice,
-      subtotal: unitPrice * quantity
+      subtotal: unitPrice * quantity,
     });
+
     this.form.patchValue({
-      totalAmount: this.getTotalAmount() + this.vatAmount - this.discountAmount
+      totalAmount: this.getTotalAmount()
+    })
+    this.form.patchValue({
+      totalAmount: (this.getTotalAmount()) + (this.vatAmount - this.discountAmount)
     })
   }
 
   getTotalAmount(): number {
     return this.orderItems.controls.reduce((sum, itemGroup) => {
-      const subtotal = itemGroup.get('subtotal')?.value || 0;
+      const subtotal = itemGroup.getRawValue().subtotal || 0;
       return (sum + subtotal);
     }, 0);
   }
 
   get discountAmount(): number {
-    const discountPercent = this.form.get('discount')?.value || 0;
-    const totalAmount = this.form.get('totalAmount')?.value || 0
-    return (totalAmount * (discountPercent / 100));
+    const discountPercent = this.form.value.discount ?? 0 ;
+    const totalAmount = this.form.getRawValue().totalAmount ?? 0;
+    var result = (totalAmount * (discountPercent / 100));
+    return result;
   }
 
   get vatAmount(): number {
-    const vatPercent = this.form.get('vat')?.value || 0;
-    const totalAmount = this.form.get('totalAmount')?.value || 0
-    return (totalAmount * (vatPercent / 100));
+    const vatPercent = this.form.value.vat ?? 0 ;
+    const totalAmount = this.form.getRawValue().totalAmount ?? 0;
+    var result = (totalAmount * (vatPercent / 100));
+    return result;
   }
 
   onVatChange() {
@@ -130,21 +150,40 @@ export class SalesOrder {
     item.get('subtotal')?.setValue(qty * price);
 
     this.form.patchValue({
-      totalAmount: this.getTotalAmount()
+      totalAmount: this.getTotalAmount() + this.vatAmount - this.discountAmount
     })
   }
 
   onSalesOrderSubmit() {
-    if (this.form.invalid) {
+    if(this.form.value.customerType == 'existing' && this.form.value.customerExist == null)
+    {
+      this.isCustomerSelected = false;
+      this.form.setErrors({ invalid: true });
+    }
+
+    if(this.form.value.orderStatus == null)
+    {
+      this.isOrderStatusSelected = false;
+      this.form.setErrors({ invalid: true });
+    }
+
+    if(this.form.value.customerType == 'new' && this.form.value.customerNew == null )
+    {
+      this.hasCustomerName = false;
+      this.form.setErrors({ invalid: true });
+    }
+
+
+    if (this.form.invalid) {      
       return;
     }
 
     const guid = crypto.randomUUID();
-    this.form.value.id = guid;
+    this.form.patchValue({id: guid});
 
     if (this.form.value.customerType == 'existing') {
-      this.salesOrderService.addSalesOrder(this.form.value).subscribe(data => {
-        console.log(data);
+      this.salesOrderService.addSalesOrder(this.form.getRawValue()).subscribe(data => {
+         this.resetForm();
       })
     }
     else if (this.form.value.customerType == 'new') {
@@ -153,23 +192,31 @@ export class SalesOrder {
         Name: this.form.value.customerNew
       }
       this.salesOrderService.addCustomer(customer).subscribe((data) => {
-        this.form.value.customerType = 'existing',
-          this.form.value.customer.customerExist = customer.Id,
-          console.log(data);
-
-        this.salesOrderService.addSalesOrder(this.form.value).subscribe(data => {
-          console.log(data);
+        this.salesOrderService.customers.update((old)=> [customer,...old])
+        this.form.patchValue({
+          customerType: 'existing',
+          customerExist: customer.Id,
+          customerNew: null
+        })
+        this.salesOrderService.addSalesOrder(this.form.getRawValue()).subscribe(data => {
+          this.resetForm();
         })
       })
     }
     else {
+      this.form.patchValue({
+        customerExist: null
+      })
       this.salesOrderService.addSalesOrder(this.form.value).subscribe(data => {
-        console.log(data);
+        this.resetForm();
       })
     }
+  }
 
+  resetForm()
+  {
     this.form.reset({
-      orderNo: '',
+      orderNo: this.orderNo + 1,
       orderDate: this.getToday(),
       customerType: 'existing',
       vat: 0,
@@ -185,7 +232,22 @@ export class SalesOrder {
   }
 
   onSeletedCustomerType(event: Event) {
-    console.log(event);
+    
+  }
+
+  onSelectedCustomer()
+  {
+    this.isCustomerSelected = true;
+  }
+
+  onOrderStatusSelected()
+  {
+    this.isOrderStatusSelected = true;
+  }
+
+  onCustomerName()
+  {
+    this.hasCustomerName = true;
   }
 
   hasOrderNo(event: boolean) {

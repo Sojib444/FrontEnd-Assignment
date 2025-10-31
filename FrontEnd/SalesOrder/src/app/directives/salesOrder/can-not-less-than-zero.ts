@@ -17,7 +17,7 @@ export class CanNotLessThanZero {
         debounceTime(200),
         map((e: any) => e.target.value),
         map(value => {
-          if(value < 0)
+          if(value <1 )
             return true;
           return false;
         })
