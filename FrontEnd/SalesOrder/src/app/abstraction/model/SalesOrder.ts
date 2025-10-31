@@ -5,8 +5,10 @@ export interface SalesOrder
     OrderDate: Date;
     TotalAmount: number;
     CustomerId: string;
-    OrderSatus: OrderStatus;
-    SalesOderItems: SalesOrderItem[];
+    OrderStatus: OrderStatus;
+    Vat: number;
+    Discount: number;
+    OrderItems: SalesOrderItem[];
 }
 
 export interface SalesOrderItem

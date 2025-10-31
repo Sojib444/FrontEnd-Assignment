@@ -3,6 +3,8 @@ import { FormArray, FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Va
 import { OrderNumberUniqueness } from '../../directives/salesOrder/order-number-uniqueness';
 import { SalesOrderService } from '../../services/salesOrders/sales-orderService';
 import { CanNotLessThanZero } from '../../directives/salesOrder/can-not-less-than-zero';
+import { from } from 'rxjs';
+import { Customer as CustomerData } from '../../abstraction/model/customer';
 
 @Component({
   selector: 'app-sales-order',
@@ -30,6 +32,7 @@ export class SalesOrder {
     })
 
     this.form = new FormGroup({
+      id: new FormControl(''),
       orderNo: new FormControl('', Validators.required),
       orderDate: new FormControl(this.getToday(), Validators.required),
       customerType: new FormControl("existing"),
@@ -47,7 +50,7 @@ export class SalesOrder {
 
   createOrderItem(): FormGroup {
     return new FormGroup({
-      productId: new FormControl('', Validators.required),
+      productId: new FormControl(null, Validators.required),
       quantity: new FormControl(1, [Validators.required, Validators.min(1)]),
       unitPrice: new FormControl({ value: 0, disabled: true }),
       subtotal: new FormControl({ value: 0, disabled: true })
@@ -73,7 +76,6 @@ export class SalesOrder {
       unitPrice,
       subtotal: unitPrice * quantity
     });
-
     this.form.patchValue({
       totalAmount: this.getTotalAmount() + this.vatAmount - this.discountAmount
     })
@@ -88,35 +90,23 @@ export class SalesOrder {
 
   get discountAmount(): number {
     const discountPercent = this.form.get('discount')?.value || 0;
-    const totalAmount = this.form.get('totalAmount')?.value || 0;
-    console.log("total amount ", totalAmount)
-    console.log("total vat on amount ", totalAmount * (discountPercent /100));
-    return (totalAmount * (discountPercent /100));
+    const totalAmount = this.form.get('totalAmount')?.value || 0
+    return (totalAmount * (discountPercent / 100));
   }
 
   get vatAmount(): number {
     const vatPercent = this.form.get('vat')?.value || 0;
     const totalAmount = this.form.get('totalAmount')?.value || 0
-    return (totalAmount * (vatPercent /100));
+    return (totalAmount * (vatPercent / 100));
   }
 
-  onVatChange()
-  {
-    // console.log(this.getTotalAmount());
-    // console.log(this.vatAmount);
-    // console.log(this.discountAmount);
-
+  onVatChange() {
     this.form.patchValue({
       totalAmount: this.getTotalAmount() + this.vatAmount - this.discountAmount
     })
   }
 
-  onDiscountChange()
-  {
-    // console.log(this.getTotalAmount());
-    // console.log(this.vatAmount);
-    // console.log(this.discountAmount);
-
+  onDiscountChange() {
     this.form.patchValue({
       totalAmount: this.getTotalAmount() + this.vatAmount - this.discountAmount
     })
@@ -125,7 +115,6 @@ export class SalesOrder {
   addItem() {
     this.orderItems.push(this.createOrderItem());
   }
-
 
   removeItem(index: number) {
     this.orderItems.removeAt(index);
@@ -143,6 +132,51 @@ export class SalesOrder {
     this.form.patchValue({
       totalAmount: this.getTotalAmount()
     })
+  }
+
+  onSalesOrderSubmit() {
+    if (this.form.invalid) {
+      return;
+    }
+
+    const guid = crypto.randomUUID();
+    this.form.value.id = guid;
+
+    if (this.form.value.customerType == 'existing') {
+      this.salesOrderService.addSalesOrder(this.form.value).subscribe(data => {
+        console.log(data);
+      })
+    }
+    else if (this.form.value.customerType == 'new') {
+      const customer: CustomerData = {
+        Id: crypto.randomUUID(),
+        Name: this.form.value.customerNew
+      }
+      this.salesOrderService.addCustomer(customer).subscribe((data) => {
+        this.form.value.customerType = 'existing',
+          this.form.value.customer.customerExist = customer.Id,
+          console.log(data);
+
+        this.salesOrderService.addSalesOrder(this.form.value).subscribe(data => {
+          console.log(data);
+        })
+      })
+    }
+    else {
+      this.salesOrderService.addSalesOrder(this.form.value).subscribe(data => {
+        console.log(data);
+      })
+    }
+
+    this.form.reset({
+      orderNo: '',
+      orderDate: this.getToday(),
+      customerType: 'existing',
+      vat: 0,
+      discount: 0,
+      orderItems: []  // clears form array
+    });
+    this.orderItems.clear();
   }
 
   getToday(): string {

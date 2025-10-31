@@ -32,4 +32,18 @@ export class SalesOrderService {
   {
       return this.httpClient.get<CustomerData[]>(url+ 'customers');
   }
+
+  addSalesOrder(salesOrder: SalesOrderData)
+  {
+    return this.httpClient.post(url+"salesorders",{
+      salesOrder
+    })
+  }
+
+  addCustomer(customer: CustomerData)
+  {
+    return this.httpClient.post(url+ 'customers',{
+      customer
+    })
+  }
 }
