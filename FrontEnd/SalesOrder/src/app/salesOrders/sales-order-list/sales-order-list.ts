@@ -13,7 +13,7 @@ import { NgbAccordionItem } from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-sales-order-list',
-  imports: [Pagination, DatePipe, CustomerNamePipe, OrderStatusPipe, NgClass, MoneyPipe, FormsModule, NgbAccordionItem],
+  imports: [Pagination, DatePipe, CustomerNamePipe, OrderStatusPipe, NgClass, MoneyPipe, FormsModule],
   templateUrl: './sales-order-list.html',
   styleUrl: './sales-order-list.css',
   standalone: true
@@ -89,4 +89,20 @@ export class SalesOrderList {
   {
     this.currentPage.set(event);
   }
+
+  editOrder(orderId: string) {
+  this.router.navigate(['/orders', orderId,'edit']);
+  }
+
+  deleteOrder(orderId: string) {
+  if (!confirm('Are you sure you want to delete this order?')) {
+    return;
+  }
+
+  this.salesOrderService.deleteSalesOrder(orderId)
+    .subscribe(() => {
+      const updatedOrders = this.salesOrderService.salesOrders().filter(o => o.id !== orderId);
+      this.salesOrderService.salesOrders.set(updatedOrders);
+    });
+}
 }

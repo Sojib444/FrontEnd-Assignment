@@ -40,7 +40,6 @@ export class Customer implements OnInit {
 
   addcustomer()
   {
-    console.log(this.form);
     if(this.form.invalid || this.hasNameExists)
       return;
 

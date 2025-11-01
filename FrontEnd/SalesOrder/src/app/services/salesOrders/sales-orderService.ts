@@ -4,6 +4,7 @@ import { SalesOrder as SalesOrderData} from '../../abstraction/model/SalesOrder'
 import { url } from '../../configuration/url';
 import { Customer as CustomerData } from '../../abstraction/model/customer';
 import { Product as ProductData } from '../../abstraction/model/product';
+import { SalesOrder } from '../../salesOrders/sales-order/sales-order';
 
 @Injectable({
   providedIn: 'root'
@@ -42,11 +43,21 @@ export class SalesOrderService {
 
   addSalesOrder(salesOrder: SalesOrderData)
   {
-    return this.httpClient.post(url+"salesorders",salesOrder)
+    return this.httpClient.post<SalesOrderData>(url+"salesorders",salesOrder)
   }
 
   addCustomer(customer: CustomerData)
   {
     return this.httpClient.post(url+ 'customers',customer)
+  }
+
+  updateSalesOrder(id: string, salesOrder: SalesOrderData)
+  {
+    return this.httpClient.patch<SalesOrderData>(`${url}salesorders/${id}`,salesOrder);
+  }
+
+  deleteSalesOrder(id: string)
+  {
+    return this.httpClient.delete(`${url}salesorders/${id}`);
   }
 }

@@ -3,8 +3,8 @@ import { FormArray, FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Va
 import { OrderNumberUniqueness } from '../../directives/salesOrder/order-number-uniqueness';
 import { SalesOrderService } from '../../services/salesOrders/sales-orderService';
 import { CanNotLessThanZero } from '../../directives/salesOrder/can-not-less-than-zero';
-import { from } from 'rxjs';
 import { Customer as CustomerData } from '../../abstraction/model/customer';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-sales-order',
@@ -13,7 +13,7 @@ import { Customer as CustomerData } from '../../abstraction/model/customer';
   styleUrl: './sales-order.css',
   standalone: true,
 })
-export class SalesOrder {
+export class SalesOrder implements OnInit {
   hasOrderNoExists: boolean = false;
   vatError: boolean = false;
   discountError: boolean = false;
@@ -27,6 +27,9 @@ export class SalesOrder {
   vatLessThanZero: boolean = true;
   discountLessThanZero: boolean = true;
   hasCustomerName: boolean = true;
+
+  route = inject(ActivatedRoute);
+  router = inject(Router);
 
   constructor(private formBuilder: FormBuilder) {
     this.salesOrderService.loadcustomers().subscribe(data => {
@@ -55,7 +58,6 @@ export class SalesOrder {
       totalAmount: new FormControl({ value: 0, disabled: true })
     })
   }
-
   createOrderItem(): FormGroup {
     return new FormGroup({
       productId: new FormControl(null, Validators.required),
@@ -155,61 +157,79 @@ export class SalesOrder {
   }
 
   onSalesOrderSubmit() {
-    if(this.form.value.customerType == 'existing' && this.form.value.customerExist == null)
+    if (this.form.value.id) {
+      this.salesOrderService.updateSalesOrder(this.form.value.id, this.form.getRawValue())
+      .subscribe(updatedOrder => {
+        const allOrders = [...this.salesOrderService.salesOrders()];
+        const index = allOrders.findIndex(o => o.id === updatedOrder.id);
+        if (index !== -1) {
+          allOrders[index] = updatedOrder;
+          this.salesOrderService.salesOrders.set(allOrders);
+        }
+        this.resetForm();
+        this.router.navigate(['/orders']);
+      });
+    }
+    else
     {
-      this.isCustomerSelected = false;
-      this.form.setErrors({ invalid: true });
-    }
-
-    if(this.form.value.orderStatus == null)
-    {
-      this.isOrderStatusSelected = false;
-      this.form.setErrors({ invalid: true });
-    }
-
-    if(this.form.value.customerType == 'new' && this.form.value.customerNew == null )
-    {
-      this.hasCustomerName = false;
-      this.form.setErrors({ invalid: true });
-    }
-
-
-    if (this.form.invalid) {      
-      return;
-    }
-
-    const guid = crypto.randomUUID();
-    this.form.patchValue({id: guid});
-
-    if (this.form.value.customerType == 'existing') {
-      this.salesOrderService.addSalesOrder(this.form.getRawValue()).subscribe(data => {
-         this.resetForm();
-      })
-    }
-    else if (this.form.value.customerType == 'new') {
-      const customer: CustomerData = {
-        Id: crypto.randomUUID(),
-        Name: this.form.value.customerNew
+      if(this.form.value.customerType == 'existing' && this.form.value.customerExist == null)
+      {
+        this.isCustomerSelected = false;
+        this.form.setErrors({ invalid: true });
       }
-      this.salesOrderService.addCustomer(customer).subscribe((data) => {
-        this.salesOrderService.customers.update((old)=> [customer,...old])
-        this.form.patchValue({
-          customerType: 'existing',
-          customerExist: customer.Id,
-          customerNew: null
-        })
+
+      if(this.form.value.orderStatus == null)
+      {
+        this.isOrderStatusSelected = false;
+        this.form.setErrors({ invalid: true });
+      }
+
+      if(this.form.value.customerType == 'new' && this.form.value.customerNew == null )
+      {
+        this.hasCustomerName = false;
+        this.form.setErrors({ invalid: true });
+      }
+
+      if (this.form.invalid) {      
+        return;
+      }
+      
+      const guid = crypto.randomUUID();
+      this.form.patchValue({id: guid});
+
+      if (this.form.value.customerType == 'existing') {
         this.salesOrderService.addSalesOrder(this.form.getRawValue()).subscribe(data => {
+          this.salesOrderService.salesOrders.update((old) => [data,...old]);
           this.resetForm();
         })
-      })
-    }
-    else {
-      this.form.patchValue({
-        customerExist: null
-      })
-      this.salesOrderService.addSalesOrder(this.form.getRawValue()).subscribe(data => {
-        this.resetForm();
-      })
+      }
+      else if (this.form.value.customerType == 'new') {
+        const customer: CustomerData = {
+          Id: crypto.randomUUID(),
+          Name: this.form.value.customerNew
+        }
+        this.salesOrderService.addCustomer(customer).subscribe((data) => {
+          this.salesOrderService.customers.update((old)=> [customer,...old])
+          this.form.patchValue({
+            customerType: 'existing',
+            customerExist: customer.Id,
+            customerNew: null
+          })
+          this.salesOrderService.addSalesOrder(this.form.getRawValue()).subscribe(data => {
+            this.salesOrderService.salesOrders.update((old) => [data,...old]);
+            this.resetForm();
+          })
+        })
+      }
+      else {
+        this.form.patchValue({
+          customerExist: null
+        })
+        this.salesOrderService.addSalesOrder(this.form.getRawValue()).subscribe(data => {
+          this.salesOrderService.salesOrders.update((old) => [data,...old]);
+          this.resetForm();
+        })
+      }
     }
   }
 
@@ -264,5 +284,47 @@ export class SalesOrder {
 
   hasQuantityError(event: boolean) {
     this.quantityError = event;
+  }
+
+  //Editing 
+  ngOnInit() {
+  this.route.paramMap.subscribe(params => {
+      const orderId = params.get('id');
+      if (orderId) {
+        this.loadOrderForEdit(orderId);
+      }
+      });
+    }
+
+  loadOrderForEdit(orderId: string) {
+  const order = this.salesOrderService.salesOrders().find(o => o.id === orderId);
+  if (!order) return;
+
+
+  this.form.patchValue({
+    id: order.id,
+    orderNo: order.orderNo,
+    orderDate: order.orderDate,
+    customerType: order.customerType,
+    customerExist: order.customerExist,
+    customerNew: order.customerNew,
+    orderStatus: order.orderStatus,
+    vat: order.vat,
+    discount: order.discount,
+    totalAmount: order.totalAmount
+  });
+
+  this.orderItems.clear();
+  order.orderItems.forEach(item => {
+    const group = this.createOrderItem();
+    group.patchValue(item);
+    this.orderItems.push(group);
+  });
+}
+
+  canCelUpdate()
+  {
+    this.resetForm();
+    this.router.navigate(['/orders']);
   }
 }

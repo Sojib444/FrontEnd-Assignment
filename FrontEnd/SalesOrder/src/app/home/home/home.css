@@ -1,0 +1,15 @@
+/* Center the content vertically and horizontally */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f8fafc;
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2563eb; /* Blue color */
+  text-align: center;
+}

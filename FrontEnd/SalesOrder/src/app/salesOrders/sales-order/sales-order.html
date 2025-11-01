@@ -133,7 +133,15 @@
             </div>
 
             <div class="text-end">
-                <button type="submit" class="btn btn-primary px-4">Create Order</button>
+                 @if(form.value.id)
+                 {
+                    <button type="button" class="btn btn-danger update px-4" (click)="canCelUpdate()">Cancel</button>
+                    <button type="submit" class="btn btn-success px-4">Update</button>
+                 }
+                 @else
+                 {
+                     <button type="submit" class="btn btn-primary px-4">Create</button>
+                 }               
             </div>
         </form>
     </div>

@@ -13,7 +13,6 @@ export class Pagination {
   selectedPage= output<number>();
   constructor()
   {
-    console.log(this.totalLength());
   }
 
   onPageChange(newPage: number) {

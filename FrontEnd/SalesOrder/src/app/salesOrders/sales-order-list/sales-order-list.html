@@ -71,8 +71,8 @@
                       }">{{item.orderStatus | orderStatus}}</span></td>
                     <td class="totalAmount">{{item.totalAmount | money}}</td>
                     <td>
-                    <button class="btn btn-warning">Update</button>
-                    <button class="btn btn-danger">Delete</button>
+                    <button class="btn btn-warning" (click)="editOrder(item.id)">Update</button>
+                    <button class="btn btn-danger" (click)="deleteOrder(item.id)">Delete</button>
                     </td>
                 </tr>
             }           

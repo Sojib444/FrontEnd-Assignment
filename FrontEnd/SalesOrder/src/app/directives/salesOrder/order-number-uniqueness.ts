@@ -33,7 +33,6 @@ export class OrderNumberUniqueness {
       )
       .subscribe(res => {
         this.duplicateCheck.emit(res);
-        console.log(res);
       });
   }
 }

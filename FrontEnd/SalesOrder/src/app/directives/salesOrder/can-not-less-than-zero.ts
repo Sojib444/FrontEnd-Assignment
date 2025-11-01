@@ -24,7 +24,6 @@ export class CanNotLessThanZero {
       )
       .subscribe(res => {
         this.islessthanZero.emit(res)
-        console.log(res);
       });
   }
 }
