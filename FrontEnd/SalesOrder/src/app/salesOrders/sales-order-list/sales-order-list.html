@@ -48,10 +48,16 @@
         <thead>
           <tr>
             <th>Order No</th>
-            <th>Order Date <span class="sort-icon">⇅</span></th>
+            <th>Order Date  <span class="sort-icon"
+              (click)="toggleSort('orderDate')">
+              {{ sortKey() === 'orderDate' ? (sortDir() === 'asc' ? '↑' : '↓') : '⇅' }}</span>
+            </th>
             <th>Customer</th>
             <th>Order Status</th>
-            <th>Total Amount <span class="sort-icon">⇅</span></th>
+            <th>Total Amount <span class="sort-icon"
+            (click)="toggleSort('totalAmount')">
+            {{ sortKey() === 'totalAmount' ? (sortDir() === 'asc' ? '↑' : '↓') : '⇅' }}</span>
+            </th>
             <th>Action</th>
           </tr>
         </thead>
