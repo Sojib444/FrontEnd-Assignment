@@ -74,6 +74,11 @@
       "id": "dac3",
       "Id": "12a76050-d304-4cbc-ac33-5fb771b0ccd1",
       "Name": "434"
+    },
+    {
+      "id": "1549",
+      "Id": "cdab54f9-31ec-4420-b6f6-268f5868e69a",
+      "Name": "fwefwfef"
     }
   ],
   "products": [
@@ -259,92 +264,6 @@
     }
   ],
   "salesorders": [
-    {
-      "id": "e0e5ea22-7b05-4297-a531-c2698fec7c56",
-      "orderNo": "SO-X4464",
-      "orderDate": "2025-11-01",
-      "customerType": "existing",
-      "customerExist": "5b3c4f74-2b6d-4cf3-a8f2-1b1b9c5b01a1",
-      "customerNew": null,
-      "orderStatus": "3",
-      "vat": 0,
-      "discount": 0,
-      "orderItems": [
-        {
-          "productId": "b4c5d6e7-f8a9-4a75-4d56-123456789abc",
-          "quantity": 1,
-          "unitPrice": 189,
-          "subtotal": 189
-        }
-      ],
-      "totalAmount": 189
-    },
-    {
-      "id": "b6ea2869-eb8a-481d-98fb-6a63ef5492f3",
-      "orderNo": "SO-X56521",
-      "orderDate": "2025-11-01",
-      "customerType": "existing",
-      "customerExist": "99184c59-1d6a-461e-86eb-a1bd7df32d8b",
-      "customerNew": null,
-      "orderStatus": "2",
-      "vat": 0,
-      "discount": 0,
-      "orderItems": [
-        {
-          "productId": "e3f4a5b6-c7d8-430e-deff-abcdef012345",
-          "quantity": 1,
-          "unitPrice": 54,
-          "subtotal": 54
-        }
-      ],
-      "totalAmount": 54
-    },
-    {
-      "id": "5efa3c97-25b5-453a-beb1-380c708a6bba",
-      "orderNo": "SO-X7767",
-      "orderDate": "2025-11-01",
-      "customerType": "existing",
-      "customerExist": "e71c5b39-6c2f-4db7-94f1-f812b7124cd1",
-      "customerNew": null,
-      "orderStatus": "2",
-      "vat": 0,
-      "discount": 0,
-      "orderItems": [
-        {
-          "productId": "c5d6e7f8-a9b0-4b86-5e67-23456789abcd",
-          "quantity": 5,
-          "unitPrice": 7,
-          "subtotal": 35
-        },
-        {
-          "productId": "f8a9b0c1-d2e3-4eb9-89aa-56789abcdef0",
-          "quantity": 3,
-          "unitPrice": 89,
-          "subtotal": 267
-        }
-      ],
-      "totalAmount": 302
-    },
-    {
-      "id": "ac46e321-6598-4d21-8c2b-42afa98129f9",
-      "orderNo": "SO-X6128",
-      "orderDate": "2025-11-01",
-      "customerType": "existing",
-      "customerExist": "99184c59-1d6a-461e-86eb-a1bd7df32d8b",
-      "customerNew": null,
-      "orderStatus": "3",
-      "vat": 0,
-      "discount": 0,
-      "orderItems": [
-        {
-          "productId": "f2a3b4c5-d6e7-4853-2b34-f0123456789a",
-          "quantity": 1,
-          "unitPrice": 14,
-          "subtotal": 14
-        }
-      ],
-      "totalAmount": 14
-    },
     {
       "id": "b7bc95fd-955a-4469-9e9e-7a640ea55b76",
       "orderNo": "SO-X94021",
@@ -760,19 +679,6 @@
       "totalAmount": 0
     },
     {
-      "id": "e5249418-44a5-400f-b5cb-65bf39a4bb58",
-      "orderNo": "SO-X7243",
-      "orderDate": "2025-11-03",
-      "customerType": "existing",
-      "customerExist": "e71c5b39-6c2f-4db7-94f1-f812b7124cd1",
-      "customerNew": null,
-      "orderStatus": "5",
-      "vat": 0,
-      "discount": 0,
-      "orderItems": [],
-      "totalAmount": 0
-    },
-    {
       "id": "b1826119-ee18-4933-b72e-f0d7b41a9647",
       "orderNo": "SO-X21351",
       "orderDate": "2025-11-03",
@@ -810,6 +716,119 @@
         }
       ],
       "totalAmount": 29
+    },
+    {
+      "id": "1fbb5112-a64c-42eb-8274-b711cbea2bee",
+      "orderNo": "SO-X571",
+      "orderDate": "2025-11-03",
+      "customerType": "existing",
+      "customerExist": "7d5f1c42-45a8-43d3-b218-9c912bca2a12",
+      "customerNew": null,
+      "orderStatus": "2",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "f8a9b0c1-d2e3-4eb9-89aa-56789abcdef0",
+          "quantity": 1,
+          "unitPrice": 89,
+          "subtotal": 89
+        }
+      ],
+      "totalAmount": 89
+    },
+    {
+      "id": "c7f76d38-4462-4bfb-9de9-202d0e1d10d9",
+      "orderNo": "SO-X8313",
+      "orderDate": "2025-11-03",
+      "customerType": "existing",
+      "customerExist": "99184c59-1d6a-461e-86eb-a1bd7df32d8b",
+      "customerNew": null,
+      "orderStatus": "2",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "c5d6e7f8-a9b0-4b86-5e67-23456789abcd",
+          "quantity": 1,
+          "unitPrice": 7,
+          "subtotal": 7
+        }
+      ],
+      "totalAmount": 7
+    },
+    {
+      "id": null,
+      "orderNo": "SO-X56341",
+      "orderDate": "2025-11-03",
+      "customerType": "existing",
+      "customerExist": "cdab54f9-31ec-4420-b6f6-268f5868e69a",
+      "customerNew": null,
+      "orderStatus": null,
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [],
+      "totalAmount": null
+    },
+    {
+      "id": "4417a928-343b-4bb8-9093-881c7a57bec2",
+      "orderNo": "SO-X28431",
+      "orderDate": "2025-11-03",
+      "customerType": "existing",
+      "customerExist": "5b3c4f74-2b6d-4cf3-a8f2-1b1b9c5b01a1",
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "a3b4c5d6-e7f8-4964-3c45-0123456789ab",
+          "quantity": 1,
+          "unitPrice": 9,
+          "subtotal": 9
+        }
+      ],
+      "totalAmount": 9
+    },
+    {
+      "id": "9e76eb26-fa02-4d48-9f46-d7b8740f86d1",
+      "orderNo": "SO-X54631",
+      "orderDate": "2025-11-03",
+      "customerType": "guest",
+      "customerExist": null,
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "d6e7f8a9-b0c1-4c97-6f78-3456789abcde",
+          "quantity": 1,
+          "unitPrice": 15,
+          "subtotal": 15
+        }
+      ],
+      "totalAmount": 15
+    },
+    {
+      "id": "9e76eb26-fa02-4d48-9f46-d7b8740f86d1",
+      "orderNo": "SO-X54631",
+      "orderDate": "2025-11-03",
+      "customerType": "guest",
+      "customerExist": null,
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "d6e7f8a9-b0c1-4c97-6f78-3456789abcde",
+          "quantity": 1,
+          "unitPrice": 15,
+          "subtotal": 15
+        }
+      ],
+      "totalAmount": 15
     }
   ]
 }

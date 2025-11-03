@@ -23,7 +23,7 @@ export class SalesOrder implements OnInit {
   salesOrderService = inject(SalesOrderService)
   selectedCustomerType: string = "existing";
   duplicateProductSelected =  signal<boolean>(false);
-  noProductSelectedErrorMessage: boolean = false;
+  noProductErrorMessage: boolean = false;
 
   isCustomerSelected: boolean = true;
   isOrderStatusSelected: boolean = true;
@@ -128,6 +128,8 @@ export class SalesOrder implements OnInit {
     this.form.patchValue({
       totalAmount: (this.getTotalAmount()) + (this.vatAmount - this.discountAmount)
     })
+
+    this.noProductErrorMessage = false;
   }
 
   getTotalAmount(): number {
@@ -200,13 +202,7 @@ export class SalesOrder implements OnInit {
       });
     }
     else
-    {
-      if(this.form.value.orderItems.length == 0)
-      {
-        this.noProductSelectedErrorMessage = true;
-        this.form.setErrors({ invalid: true });
-        return;
-      }
+    {      
       if(this.form.value.customerType == 'existing' && this.form.value.customerExist == null)
       {
         this.isCustomerSelected = false;
@@ -223,6 +219,13 @@ export class SalesOrder implements OnInit {
       {
         this.hasCustomerName = false;
         this.form.setErrors({ invalid: true });
+      }
+
+      if(this.form.value.orderItems.length == 0)
+      {
+        this.noProductErrorMessage = true;
+        this.form.setErrors({ invalid: true });
+        return;
       }
 
       if (this.form.invalid) {      
@@ -296,7 +299,7 @@ export class SalesOrder implements OnInit {
       orderItems: []  // clears form array
     });
     this.orderItems.clear();
-    this.noProductSelectedErrorMessage = false;
+    this.noProductErrorMessage = false;
   }
 
   getToday(): string {

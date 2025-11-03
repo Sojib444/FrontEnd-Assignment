@@ -9,6 +9,7 @@ import { OrderStatusPipe } from '../../pipe/salesOrder/order-status-pipe';
 import { MoneyPipe } from '../../pipe/salesOrder/money-pipe';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormsModule, NgModel } from '@angular/forms';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-sales-order-list',
@@ -30,7 +31,9 @@ export class SalesOrderList {
   sortDir = signal<'asc' | 'desc'>('asc');
 
 
-  currentPage = signal<number>(1);
+  // currentPage = signal<number>(1);
+  currentPage = new BehaviorSubject<number>(1);
+  
   pageSize = 10
 
   filteredOrders = computed(() => {
@@ -38,7 +41,7 @@ export class SalesOrderList {
     const search = this.searchTerm().trim().toLowerCase();
     const status = this.selectedStatus();
     const customer = this.selectedCustomer();
-    const date = this.selectedDate();
+    const date = this.selectedDate();    
 
     if (search) data = data.filter(o => o.orderNo?.toLowerCase().includes(search));
     if (status) data = data.filter(o => o.orderStatus == +status);
@@ -46,29 +49,24 @@ export class SalesOrderList {
     if (date) data = data.filter(o => o.orderDate == date);
 
 
-  const key = this.sortKey();
-  const dir = this.sortDir();
+    const key = this.sortKey();
+    const dir = this.sortDir();
 
-  if (key) {
-    data = [...data].sort((a, b) => {
-      const valA = (a as SaleOrderData)[key];
-      const valB = (b as SaleOrderData)[key];
-      console.log(valA);
-      console.log(valB);
-      if (valA == null || valB == null) return 0;
-      const result = valA > valB ? 1 : valA < valB ? -1 : 0;
-      return dir === 'asc' ? result : -result;
-    });
-  }
-
-   console.log(data);
-    return data;
+    if (key) {
+      data = [...data].sort((a, b) => {
+        const valA = (a as SaleOrderData)[key];
+        const valB = (b as SaleOrderData)[key];
+        if (valA == null || valB == null) return 0;
+        const result = valA > valB ? 1 : valA < valB ? -1 : 0;
+        return dir === 'asc' ? result : -result;
+      });
+    }
+      this.applyFilters();
+      return data;
   });
 
   pagedSalesOrders = computed(() => {
-    const start = (this.currentPage() - 1) * this.pageSize;
-    const end = start + this.pageSize;
-    return this.filteredOrders().slice(start, end);
+    return this.currentPage.value
   });
 
   toggleSort(key: keyof SaleOrderData) {
@@ -81,8 +79,6 @@ export class SalesOrderList {
 }
 
   applyFilters() {
-    console.log(this.sortKey())
-    console.log(this.sortDir())
     this.router.navigate([], {
       relativeTo: this.route,
       queryParams: {
@@ -91,10 +87,13 @@ export class SalesOrderList {
         customer: this.selectedCustomer() || null,
         date: this.selectedDate() || null,
         sortKey: this.sortKey() || null,
-        sortDir: this.sortDir() || null
+        sortDir: this.sortDir() || null,
+        currentPage: this.currentPage.value || null,
+        orderNo: this.searchTerm() || null
       },
       queryParamsHandling: 'merge', 
     });
+
   }
 
   ngOnInit() {
@@ -103,6 +102,10 @@ export class SalesOrderList {
       this.selectedStatus.set(params.get('status') || '');
       this.selectedCustomer.set(params.get('customer') || '');
       this.selectedDate.set(params.get('date') || '');
+      this.currentPage.next(Number(params.get('currentPage')) || 1);
+
+      console.log(this.currentPage.value);
+
       const dir = params.get('sortDir');
       if (dir === 'asc' || dir === 'desc') {
         this.sortDir.set(dir);
@@ -117,7 +120,7 @@ export class SalesOrderList {
     this.selectedStatus.set('');
     this.selectedCustomer.set('');
     this.selectedDate.set('');
-    this.sortKey.set('orderDate');
+    this.sortKey.set('');
     this.sortDir.set('asc');
     this.router.navigate([], {
       relativeTo: this.route,
@@ -127,7 +130,8 @@ export class SalesOrderList {
   
   onPageChange(event: number)
   {
-    this.currentPage.set(event);
+    this.currentPage.next(event);
+    this.applyFilters();
   }
 
   editOrder(orderId: string) {
@@ -144,5 +148,11 @@ export class SalesOrderList {
       const updatedOrders = this.salesOrderService.salesOrders().filter(o => o.id !== orderId);
       this.salesOrderService.salesOrders.set(updatedOrders);
     });
+  }
+
+  getCurrentPage() {
+  {
+    console.log(this.currentPage.value);    
+  }
 }
 }
