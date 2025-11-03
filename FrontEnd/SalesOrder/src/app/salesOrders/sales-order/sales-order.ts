@@ -303,7 +303,22 @@ export class SalesOrder implements OnInit {
   }
 
   onSeletedCustomerType(event: Event) {
-    
+    const select = event.target as HTMLSelectElement;
+    const value = select.value;
+
+    if(value == 'existing')
+    {
+      this.hasCustomerName = true;
+    }
+    else if(value == 'new')
+    {
+      this.isCustomerSelected = true;
+    }
+    else
+    {
+      this.hasCustomerName = true;
+      this.isCustomerSelected = true;
+    }
   }
 
   onSelectedCustomer()
