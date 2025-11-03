@@ -31,7 +31,7 @@ export class SalesOrderList {
 
 
   currentPage = signal<number>(1);
-  pageSize = 7
+  pageSize = 10
 
   filteredOrders = computed(() => {
     let data = this.salesOrderService.salesOrders();

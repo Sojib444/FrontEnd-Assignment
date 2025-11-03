@@ -201,6 +201,12 @@ export class SalesOrder implements OnInit {
     }
     else
     {
+      if(this.form.value.orderItems.length == 0)
+      {
+        this.noProductSelectedErrorMessage = true;
+        this.form.setErrors({ invalid: true });
+        return;
+      }
       if(this.form.value.customerType == 'existing' && this.form.value.customerExist == null)
       {
         this.isCustomerSelected = false;
@@ -227,11 +233,6 @@ export class SalesOrder implements OnInit {
       this.form.patchValue({id: guid});
 
       if (this.form.value.customerType == 'existing') {
-        if(this.noProductSelected())
-        {
-          this.noProductSelectedErrorMessage = true;
-          return;
-        }
         this.salesOrderService.addSalesOrder(this.form.getRawValue()).subscribe(data => {
           this.salesOrderService.salesOrders.update((old) => [data,...old]);
           this.resetForm();
@@ -295,6 +296,7 @@ export class SalesOrder implements OnInit {
       orderItems: []  // clears form array
     });
     this.orderItems.clear();
+    this.noProductSelectedErrorMessage = false;
   }
 
   getToday(): string {

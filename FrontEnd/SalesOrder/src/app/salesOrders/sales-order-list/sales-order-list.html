@@ -84,7 +84,8 @@
             }           
         </tbody>
       </table>
-      <div class="pagination-container">
+      <p class="totacount">Totla: {{(currentPage()-1)*10 +1}}-{{((currentPage()-1)*10)+10}} out of {{filteredOrders().length}}</p>
+          <div class="pagination-container">        
           <app-pagination [page]="currentPage()" [totalLength]="filteredOrders().length" 
           (selectedPage)="onPageChange($event)"></app-pagination>     
       </div>  

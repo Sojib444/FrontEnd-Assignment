@@ -191,3 +191,7 @@ tr:hover {
 .badge-cancelled {
   background-color: #ef4444; /* red */
 }
+
+.totacount{
+  margin-top: 8px;
+}
