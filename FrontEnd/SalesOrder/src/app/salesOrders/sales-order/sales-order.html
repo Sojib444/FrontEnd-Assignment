@@ -118,8 +118,9 @@
                             <td><button type="button" class="btn btn-danger btn-sm" (click)="removeItem(i)">×</button>
                             </td>
                         </tr>
-                        }
+                        }                         
                     </tbody>
+                    @if(duplicateProductSelected()) {<p class="inputErrorMessage">Selected item already exists</p>}
                 </table>
             </div>
 
@@ -141,8 +142,9 @@
                  @else
                  {
                      <button type="submit" class="btn btn-primary px-4">Create</button>
-                 }               
+                 }
             </div>
         </form>
+        @if(noProductSelectedErrorMessage) {<p class="inputErrorMessage">No product is selected</p>}
     </div>
 </main>

@@ -1,10 +1,11 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators, ɵInternalFormsSharedModule } from "@angular/forms";
 import { OrderNumberUniqueness } from '../../directives/salesOrder/order-number-uniqueness';
 import { SalesOrderService } from '../../services/salesOrders/sales-orderService';
 import { CanNotLessThanZero } from '../../directives/salesOrder/can-not-less-than-zero';
 import { Customer as CustomerData } from '../../abstraction/model/customer';
 import { ActivatedRoute, Router } from '@angular/router';
+import { single } from 'rxjs';
 
 @Component({
   selector: 'app-sales-order',
@@ -20,7 +21,9 @@ export class SalesOrder implements OnInit {
   quantityError: boolean = false;
   form!: FormGroup;
   salesOrderService = inject(SalesOrderService)
-  selectedCustomerType: string = "existing"
+  selectedCustomerType: string = "existing";
+  duplicateProductSelected =  signal<boolean>(false);
+  noProductSelectedErrorMessage: boolean = false;
 
   isCustomerSelected: boolean = true;
   isOrderStatusSelected: boolean = true;
@@ -78,9 +81,35 @@ export class SalesOrder implements OnInit {
   }
 
   SelectedProdut(i: number, event: Event) {
+
     const select = event.target as HTMLSelectElement;
     const selectedId = select.value;
-    const selectedProduct = this.salesOrderService.products().find(p => p.Id === selectedId);
+
+    const itemExists = this.form.value.orderItems.find((item: any, index: number) => {
+      if(item.productId == selectedId && index != i)
+      {
+        return true;
+      }
+      return false;
+    });
+
+    if(itemExists)
+    {
+      this.duplicateProductSelected.set(true);
+
+      setTimeout(() => {
+        this.duplicateProductSelected.set(false);
+      }, 2000);
+      
+    this.orderItems.removeAt(i);
+    this.form.patchValue({
+      totalAmount: this.getTotalAmount()
+    })
+
+      return;
+    }
+
+    const selectedProduct = this.salesOrderService.products().find(p => p.Id === selectedId);    
 
     if (!selectedProduct) return;
 
@@ -198,12 +227,22 @@ export class SalesOrder implements OnInit {
       this.form.patchValue({id: guid});
 
       if (this.form.value.customerType == 'existing') {
+        if(this.noProductSelected())
+        {
+          this.noProductSelectedErrorMessage = true;
+          return;
+        }
         this.salesOrderService.addSalesOrder(this.form.getRawValue()).subscribe(data => {
           this.salesOrderService.salesOrders.update((old) => [data,...old]);
           this.resetForm();
         })
       }
       else if (this.form.value.customerType == 'new') {
+        
+        this.salesOrderService.addSalesOrder(this.form.getRawValue()).subscribe(data => {
+          this.salesOrderService.salesOrders.update((old) => [data,...old]);
+          this.resetForm();
+        })
         const customer: CustomerData = {
           Id: crypto.randomUUID(),
           Name: this.form.value.customerNew
@@ -221,7 +260,11 @@ export class SalesOrder implements OnInit {
           })
         })
       }
-      else {
+      else {        
+        this.salesOrderService.addSalesOrder(this.form.getRawValue()).subscribe(data => {
+          this.salesOrderService.salesOrders.update((old) => [data,...old]);
+          this.resetForm();
+        })
         this.form.patchValue({
           customerExist: null
         })
@@ -231,6 +274,14 @@ export class SalesOrder implements OnInit {
         })
       }
     }
+  }
+
+  noProductSelected(){
+    if(this.form.value.orderItems.length == 0){
+      return true;
+    } else {
+      return false;
+   }
   }
 
   resetForm()
