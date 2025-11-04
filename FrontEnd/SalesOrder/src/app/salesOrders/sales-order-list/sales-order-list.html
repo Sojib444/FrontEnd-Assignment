@@ -62,7 +62,7 @@
           </tr>
         </thead>
         <tbody>
-            @for (item of pagedSalesOrders; track $index) 
+            @for (item of pagedSalesOrders(); track $index) 
             {
                 <tr>
                     <td>{{item.orderNo}}</td>
@@ -84,7 +84,7 @@
             }           
         </tbody>
       </table>
-      <p class="totacount">Totla: {{(currentPage.value)*10 +1}}- {{(((currentPage.value)-1)*10)+10}} out of {{filteredOrders().length}}</p>
+      <p class="totacount">{{countPageNumbers()}}</p>
           <div class="pagination-container">        
           <app-pagination [page]="currentPage.value" [totalLength]="filteredOrders().length" 
           (selectedPage)="onPageChange($event)"></app-pagination>     

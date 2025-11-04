@@ -225,7 +225,6 @@ export class SalesOrder implements OnInit {
       {
         this.noProductErrorMessage = true;
         this.form.setErrors({ invalid: true });
-        return;
       }
 
       if (this.form.invalid) {      
@@ -242,11 +241,6 @@ export class SalesOrder implements OnInit {
         })
       }
       else if (this.form.value.customerType == 'new') {
-        
-        this.salesOrderService.addSalesOrder(this.form.getRawValue()).subscribe(data => {
-          this.salesOrderService.salesOrders.update((old) => [data,...old]);
-          this.resetForm();
-        })
         const customer: CustomerData = {
           Id: crypto.randomUUID(),
           Name: this.form.value.customerNew
@@ -271,10 +265,6 @@ export class SalesOrder implements OnInit {
         })
         this.form.patchValue({
           customerExist: null
-        })
-        this.salesOrderService.addSalesOrder(this.form.getRawValue()).subscribe(data => {
-          this.salesOrderService.salesOrders.update((old) => [data,...old]);
-          this.resetForm();
         })
       }
     }

@@ -10,6 +10,7 @@ import { MoneyPipe } from '../../pipe/salesOrder/money-pipe';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormsModule, NgModel } from '@angular/forms';
 import { BehaviorSubject } from 'rxjs';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-sales-order-list',
@@ -33,6 +34,7 @@ export class SalesOrderList {
 
   // currentPage = signal<number>(1);
   currentPage = new BehaviorSubject<number>(1);
+  currentPageSignal = toSignal(this.currentPage, { initialValue: 1 });
   
   pageSize = 10
 
@@ -66,7 +68,19 @@ export class SalesOrderList {
   });
 
   pagedSalesOrders = computed(() => {
-    return this.currentPage.value
+    const start = (this.currentPageSignal() - 1) * this.pageSize;
+    const end = start + this.pageSize;
+    return this.filteredOrders().slice(start, end);
+  });
+
+  countPageNumbers = computed(() => {
+    let start = (this.currentPageSignal() - 1) * this.pageSize;
+    let end = start + this.pageSize;
+
+    if(end > this.filteredOrders().length){
+      end = this.filteredOrders().length;
+    }
+    return `Total: ${start+1}-${end} out of ${this.filteredOrders().length}`;
   });
 
   toggleSort(key: keyof SaleOrderData) {
@@ -103,9 +117,6 @@ export class SalesOrderList {
       this.selectedCustomer.set(params.get('customer') || '');
       this.selectedDate.set(params.get('date') || '');
       this.currentPage.next(Number(params.get('currentPage')) || 1);
-
-      console.log(this.currentPage.value);
-
       const dir = params.get('sortDir');
       if (dir === 'asc' || dir === 'desc') {
         this.sortDir.set(dir);
@@ -148,11 +159,6 @@ export class SalesOrderList {
       const updatedOrders = this.salesOrderService.salesOrders().filter(o => o.id !== orderId);
       this.salesOrderService.salesOrders.set(updatedOrders);
     });
-  }
-
-  getCurrentPage() {
-  {
-    console.log(this.currentPage.value);    
-  }
+  
 }
 }
