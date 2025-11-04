@@ -30,7 +30,7 @@ export class SalesOrderList implements OnInit{
   sortDir = signal<'asc' | 'desc'>('asc');
 
 
-  currentPage = signal<number>(2);  
+  currentPage = signal<number>(1);  
   
   pageSize = 10
 
@@ -59,13 +59,8 @@ export class SalesOrderList implements OnInit{
         return dir === 'asc' ? result : -result;
       });
     }
-    this.applyFilters();
       return data;
   });
-
-  constructor() 
-  {
-  }
 
   pagedSalesOrders = computed(() => {
     const start = (this.currentPage() - 1) * this.pageSize;

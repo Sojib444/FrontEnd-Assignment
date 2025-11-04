@@ -8,12 +8,12 @@ import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
   styleUrl: './pagination.css',
 })
 export class Pagination {
-  page = input<number>(1);
-  totalLength = input<number>(0);
+  pageNumerInput = input<number>(1);
+  pageSize = input<number>(10);
+  totalLength = input<number>(20);
   selectedPage= output<number>();
   constructor()
   {
-    console.log(`page come from pagination page`,this.page());
   }
 
   onPageChange(newPage: number) {

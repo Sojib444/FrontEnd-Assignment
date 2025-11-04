@@ -12,7 +12,7 @@
 
       <div class="filter-group">
         <label>Order Status</label>
-        <select  [(ngModel)]="selectedStatus">
+        <select [(ngModel)]="selectedStatus">
           <option value="">All</option>
           <option value="1">Pending</option>
           <option value="2">Processing</option>
@@ -28,7 +28,7 @@
           <option value="">All</option>
           @for(item of salesOrderService.customers(); track $index)
           {
-            <option [value]="item.Id">{{ item.Name }}</option>
+          <option [value]="item.Id">{{ item.Name }}</option>
           }
         </select>
       </div>
@@ -48,47 +48,46 @@
         <thead>
           <tr>
             <th>Order No</th>
-            <th>Order Date  <span class="sort-icon"
-              (click)="toggleSort('orderDate')">
-              {{ sortKey() === 'orderDate' ? (sortDir() === 'asc' ? '↑' : '↓') : '⇅' }}</span>
+            <th>Order Date <span class="sort-icon" (click)="toggleSort('orderDate')">
+                {{ sortKey() === 'orderDate' ? (sortDir() === 'asc' ? '↑' : '↓') : '⇅' }}</span>
             </th>
             <th>Customer</th>
             <th>Order Status</th>
-            <th>Total Amount <span class="sort-icon"
-            (click)="toggleSort('totalAmount')">
-            {{ sortKey() === 'totalAmount' ? (sortDir() === 'asc' ? '↑' : '↓') : '⇅' }}</span>
+            <th>Total Amount <span class="sort-icon" (click)="toggleSort('totalAmount')">
+                {{ sortKey() === 'totalAmount' ? (sortDir() === 'asc' ? '↑' : '↓') : '⇅' }}</span>
             </th>
             <th>Action</th>
           </tr>
         </thead>
         <tbody>
-            @for (item of pagedSalesOrders(); track $index) 
-            {
-                <tr>
-                    <td>{{item.orderNo}}</td>
-                    <td>{{item.orderDate | date:'dd/MM/yyyy'}}</td>
-                    <td class="customerName">{{item.customerExist! | customerName}}</td>
-                    <td> <span  class="badge"
-                      [ngClass]="{
+          @for (item of pagedSalesOrders(); track $index)
+          {
+          <tr>
+            <td>{{item.orderNo}}</td>
+            <td>{{item.orderDate | date:'dd/MM/yyyy'}}</td>
+            <td class="customerName">{{item.customerExist! | customerName}}</td>
+            <td> <span class="badge" [ngClass]="{
                         'badge-pending': item.orderStatus == 1,
                         'badge-processing': item.orderStatus == 2,
                         'badge-success': item.orderStatus == 3,
                         'badge-cancelled': item.orderStatus == 4,
                       }">{{item.orderStatus | orderStatus}}</span></td>
-                    <td class="totalAmount">{{item.totalAmount | money}}</td>
-                    <td>
-                    <button class="btn btn-warning" (click)="editOrder(item.id)">Update</button>
-                    <button class="btn btn-danger" (click)="deleteOrder(item.id)">Delete</button>
-                    </td>
-                </tr>
-            }           
+            <td class="totalAmount">{{item.totalAmount | money}}</td>
+            <td>
+              <button class="btn btn-warning" (click)="editOrder(item.id)">Update</button>
+              <button class="btn btn-danger" (click)="deleteOrder(item.id)">Delete</button>
+            </td>
+          </tr>
+          }
         </tbody>
       </table>
       <p class="totacount">{{countPageNumbers()}}</p>
-          <div class="pagination-container">        
-          <app-pagination [totalLength]="filteredOrders().length" 
-          (selectedPage)="onPageChange($event)"></app-pagination>     
-      </div>  
+      <div class="pagination-container">
+        @if(filteredOrders().length > 0) {
+        <app-pagination [pageNumerInput]="currentPage()" [totalLength]="filteredOrders().length"
+          (selectedPage)="onPageChange($event)" [pageSize]="pageSize"></app-pagination>
+        }
+      </div>
     </div>
   </div>
 </div>
