@@ -124,6 +124,11 @@
       "id": "ac73",
       "Id": "9376d3e0-8a06-4399-9ccb-230a8a9723dd",
       "Name": "aski"
+    },
+    {
+      "id": "5854",
+      "Id": "05b58084-987e-4efc-9bf2-0fca188948de",
+      "Name": "Sakira"
     }
   ],
   "products": [
@@ -1124,6 +1129,46 @@
       "customerExist": "9cd73cca-2405-46cb-bab9-d1ea8013c31c",
       "customerNew": null,
       "orderStatus": "3",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "e1f2a3b4-c5d6-4742-1a23-ef0123456789",
+          "quantity": 1,
+          "unitPrice": 27,
+          "subtotal": 27
+        }
+      ],
+      "totalAmount": 27
+    },
+    {
+      "id": "c6125f10-ff27-4ca1-9a94-56767fcccea7",
+      "orderNo": "SO-X7173",
+      "orderDate": "2025-11-04",
+      "customerType": "existing",
+      "customerExist": "5b3c4f74-2b6d-4cf3-a8f2-1b1b9c5b01a1",
+      "customerNew": null,
+      "orderStatus": "3",
+      "vat": 0,
+      "discount": 0,
+      "orderItems": [
+        {
+          "productId": "d6e7f8a9-b0c1-4c97-6f78-3456789abcde",
+          "quantity": 1,
+          "unitPrice": 15,
+          "subtotal": 15
+        }
+      ],
+      "totalAmount": 15
+    },
+    {
+      "id": "bb6907e6-ac92-4898-8633-575e68da6fdf",
+      "orderNo": "SO-X7625",
+      "orderDate": "2025-11-04",
+      "customerType": "existing",
+      "customerExist": "05b58084-987e-4efc-9bf2-0fca188948de",
+      "customerNew": null,
+      "orderStatus": "2",
       "vat": 0,
       "discount": 0,
       "orderItems": [

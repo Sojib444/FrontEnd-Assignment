@@ -8,7 +8,6 @@ import { OrderStatusPipe } from '../../pipe/salesOrder/order-status-pipe';
 import { MoneyPipe } from '../../pipe/salesOrder/money-pipe';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { end } from '@popperjs/core';
 
 @Component({
   selector: 'app-sales-order-list',
