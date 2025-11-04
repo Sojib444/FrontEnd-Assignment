@@ -1,4 +1,4 @@
-import { Component, input, output } from '@angular/core';
+import { Component, effect, input, output } from '@angular/core';
 import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -13,7 +13,7 @@ export class Pagination {
   selectedPage= output<number>();
   constructor()
   {
-    console.log(this.page());
+    console.log(`page come from pagination page`,this.page());
   }
 
   onPageChange(newPage: number) {

@@ -86,7 +86,7 @@
       </table>
       <p class="totacount">{{countPageNumbers()}}</p>
           <div class="pagination-container">        
-          <app-pagination [page]="currentPage.value" [totalLength]="filteredOrders().length" 
+          <app-pagination [totalLength]="filteredOrders().length" 
           (selectedPage)="onPageChange($event)"></app-pagination>     
       </div>  
     </div>

@@ -1,16 +1,14 @@
-import { Component, computed, inject, OnInit, signal } from '@angular/core';
+import { Component, computed, inject, OnChanges, OnInit, signal, SimpleChanges } from '@angular/core';
 import { SalesOrderService } from '../../services/salesOrders/sales-orderService';
 import { SalesOrder as SaleOrderData} from '../../abstraction/model/SalesOrder';
-import { SalesOrder } from '../sales-order/sales-order';
 import { Pagination } from "../../pagination/pagination";
 import { DatePipe, NgClass } from '@angular/common';
 import { CustomerNamePipe } from '../../pipe/salesOrder/customer-name-pipe';
 import { OrderStatusPipe } from '../../pipe/salesOrder/order-status-pipe';
 import { MoneyPipe } from '../../pipe/salesOrder/money-pipe';
 import { ActivatedRoute, Router } from '@angular/router';
-import { FormsModule, NgModel } from '@angular/forms';
-import { BehaviorSubject } from 'rxjs';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { FormsModule } from '@angular/forms';
+import { end } from '@popperjs/core';
 
 @Component({
   selector: 'app-sales-order-list',
@@ -19,7 +17,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
   styleUrl: './sales-order-list.css',
   standalone: true
 })
-export class SalesOrderList {
+export class SalesOrderList implements OnInit{
   salesOrderService = inject(SalesOrderService);
   router = inject(Router);
   route = inject(ActivatedRoute);
@@ -28,13 +26,11 @@ export class SalesOrderList {
   selectedStatus = signal<string>('');   
   selectedCustomer = signal<string>('');
   selectedDate = signal<string>('');
-  sortKey = signal<keyof SaleOrderData | ''>(''); 
+  sortKey = signal<keyof SaleOrderData>('orderDate'); 
   sortDir = signal<'asc' | 'desc'>('asc');
 
 
-  // currentPage = signal<number>(1);
-  currentPage = new BehaviorSubject<number>(1);
-  currentPageSignal = toSignal(this.currentPage, { initialValue: 1 });
+  currentPage = signal<number>(2);  
   
   pageSize = 10
 
@@ -63,18 +59,22 @@ export class SalesOrderList {
         return dir === 'asc' ? result : -result;
       });
     }
-      this.applyFilters();
+    this.applyFilters();
       return data;
   });
 
+  constructor() 
+  {
+  }
+
   pagedSalesOrders = computed(() => {
-    const start = (this.currentPageSignal() - 1) * this.pageSize;
+    const start = (this.currentPage() - 1) * this.pageSize;
     const end = start + this.pageSize;
     return this.filteredOrders().slice(start, end);
   });
 
   countPageNumbers = computed(() => {
-    let start = (this.currentPageSignal() - 1) * this.pageSize;
+    let start = (this.currentPage() - 1) * this.pageSize;
     let end = start + this.pageSize;
 
     if(end > this.filteredOrders().length){
@@ -102,7 +102,7 @@ export class SalesOrderList {
         date: this.selectedDate() || null,
         sortKey: this.sortKey() || null,
         sortDir: this.sortDir() || null,
-        currentPage: this.currentPage.value || null,
+        currentPage: this.currentPage() || null,
         orderNo: this.searchTerm() || null
       },
       queryParamsHandling: 'merge', 
@@ -116,7 +116,13 @@ export class SalesOrderList {
       this.selectedStatus.set(params.get('status') || '');
       this.selectedCustomer.set(params.get('customer') || '');
       this.selectedDate.set(params.get('date') || '');
-      this.currentPage.next(Number(params.get('currentPage')) || 1);
+
+      if(params.get('currentPage'))
+      {
+        this.currentPage.set(Number(params.get('currentPage')));
+      } else {
+        this.currentPage.set(1);
+      }
       const dir = params.get('sortDir');
       if (dir === 'asc' || dir === 'desc') {
         this.sortDir.set(dir);
@@ -131,7 +137,7 @@ export class SalesOrderList {
     this.selectedStatus.set('');
     this.selectedCustomer.set('');
     this.selectedDate.set('');
-    this.sortKey.set('');
+    this.sortKey.set('orderDate');
     this.sortDir.set('asc');
     this.router.navigate([], {
       relativeTo: this.route,
@@ -141,7 +147,7 @@ export class SalesOrderList {
   
   onPageChange(event: number)
   {
-    this.currentPage.next(event);
+    this.currentPage.set(event);
     this.applyFilters();
   }
 
@@ -158,7 +164,6 @@ export class SalesOrderList {
     .subscribe(() => {
       const updatedOrders = this.salesOrderService.salesOrders().filter(o => o.id !== orderId);
       this.salesOrderService.salesOrders.set(updatedOrders);
-    });
-  
+    });  
 }
 }
